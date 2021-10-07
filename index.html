@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>My Portfolio homepage</title>
+        <title>Home</title>
         <!--This is where I begin to style my document by placing div tags.-->
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <style>
@@ -67,7 +67,7 @@
 
             .heading_top {
                 text-align: center;
-                line-height: 75px;
+                padding-bottom: 8px;
                 border-style: solid;
                 border-color: aliceblue;
                 border-top:rgba(185, 184, 184, 0.6);
@@ -78,6 +78,7 @@
                 height: 100px;
                 margin-top: 10px;
                 margin-bottom: 20px;
+                
             }
 
             body {
@@ -114,19 +115,88 @@
 
             }
                 
-            
+            .button {
+                background-color: transparent;
+                border: none;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                
+                
+            }
+            ul {
+                list-style-type: none;
+                margin: 0px;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 0px;
+                padding-right: 0px;
+                overflow: hidden;
+                background-color: transparent;
+                
+                border-radius: 0px;
+            }
+            li {
+                float: left;
+                text-align: center;
+                margin: 5px;
+                margin-bottom: 0px;
+                text-decoration: none;
+                padding-top: 0px;
+                padding-bottom: 0px;
+                padding-left: 25px;
+                padding-right:25px;
+                font-family: "abel";
+                border: white;
+                border-style: solid;
+                
+            }
+            .liindex {
+                
+                background-color: transparent;
+                border-bottom-left-radius: 25px;
+                margin-left: 0px;
+            }
+            .liedu {
+                background-color: transparent;
+
+            }
+            .liski {
+                background-color: transparent;
+                
+            }
+            .licon {
+                background-color: transparent;
+            }
+            a {
+                position: relative;
+                display: block;
+                padding: 8px;
+                color: black;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
             
             </style>
     </head>
     <!--This is where my body starts.-->
     <body>
-        
-        <div class="heading_top">
-        <h1 style="color:aliceblue; font-family: abel;">Thomas Joseph Cottis</h1>
-        <nav>
-
-        </nav>
-        </div>
+        <header>
+            <div class="heading_top">
+                <h1 style="color:aliceblue; font-family: abel;">Thomas Joseph Cottis</h1>
+                    <ul>
+                        <li class="liindex"><a href="index.html">Home</a></li>
+                        <li class="liedu"><a href="Education.html">Education</a></li>
+                        <li class="liski"><a href="Skills.html">Skills</a></li>
+                        <li class="licon"><a href="Contact.html">Contact</a></li>
+                    </ul>
+                        
+            </div>
+        </header>
             <div class="heading_right">
                 <h2 class="font_minim">What you will need to know about me:</h2>
             
