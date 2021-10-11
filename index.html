@@ -84,7 +84,7 @@
             }
             .character {
                 width: 100%;
-                height: 600px;
+                height: 545px;
                 border-style: solid;
                 border-color: aliceblue;
                 border-right:rgba(185, 184, 184, 0.6);
@@ -98,12 +98,12 @@
             } 
             .grid {
                 display: grid;
-                grid-template-columns: 250px 250px 250px;
+                grid-template-columns: 400px 400px 400px;
                 grid-template-rows: 250px 250px 250px;
                 grid-row-gap: 10px;
-                grid-column-gap: 150px;
+                grid-column-gap: 10px;
                 justify-content: center;
-                padding-top: 50px;
+                padding: 15px;
                 
             }
             .grid > div {
@@ -111,10 +111,14 @@
                 background-color: transparent;
                 border-style: solid;
                 border-color: white;
+                border-radius: 10px;
                 text-align: center;
-                
                 font-size: 30px;
                 justify-content: center;
+                transition: 1s;
+            }
+            .grid > div:hover {
+                background-color: rgba(253, 178, 39, 0.3); 
             }
             h3 {
                 font-family: abel;
@@ -196,7 +200,6 @@
                 padding-left: 25px;
                 padding-right:25px;
                 font-family: "abel";
-                border: white;
                 border-style: solid;
                 border-radius: 5px;
                 background-color: transparent;
@@ -227,8 +230,32 @@
                 padding-left: 10px;
                 padding-right: 10px;
             }
-            
-            
+            .tooltip {
+                position: relative;
+                display: inline-block;
+            }
+            .tooltip .tooltiptext {
+                visibility: hidden;
+                width: inherit;
+                height: inherit;
+                background-color: transparent;
+                color: transparent;
+                text-align: center;
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 16px;
+                padding: 5px 0;
+                border-radius: 10px;
+                position: absolute;
+                z-index: 1;
+                top: 0px;
+                left: 0%;
+                transition: ease-in .5s;
+            }
+            .tooltip:hover .tooltiptext {
+                visibility: visible;
+                background-color: rgba(233, 232, 231, 0.7);
+                color: black;
+            }
             </style>
     </head>
     <!--This is where my body starts.-->
@@ -281,12 +308,24 @@
                     <div class="character">
                         
                             <div class="grid">
-                                <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
-                                <div><i class="fas fa-search-dollar"></i><h3>Business</br>Oriented</h3></div>
-                                <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
-                                <div><i class="fas fa-paint-brush"></i><h3>Creative</h3></div>
-                                <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
-                                <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
+                                <div class="tooltip">
+                                        <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
+                                    <span class="tooltiptext">When it came time to finally choose a careerpath, I first went with my gut and went into something
+                                        technical like being a mechanic, but I quickly found out that programming was the route that I always really wanted, but never knew how to 
+                                    harness until now. I am decided because I know that this is the life for me and I am willing to make it happen.</span>
+                                </div>
+                                <div class="tooltip">
+                                        <div><i class="fas fa-search-dollar"></i><h3>Business</br>Oriented</h3></div>
+                                    <span class="tooltiptext">Being business oriented has grasped me since my first job at a local car wash to now. It didn't matter
+                                        what the job was as long as I knew that I'm able to make money only because I'm helping the business make money. Knowing this has 
+                                        greatly improved my perspective of how we can work together to make more money together.
+                                    </span>
+                                </div>  
+                                        <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
+                                        <div><i class="fas fa-paint-brush"></i><h3>Creative</h3></div>
+                                        <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
+                                        <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
+                                
                             </div>
                         
                     </div>
