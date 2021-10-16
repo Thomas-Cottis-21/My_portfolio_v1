@@ -2,333 +2,101 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home</title>
-        <!--This is where I begin to style my document by placing div tags.-->
-        <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
-        <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
+            <title>Landing Page/index</title>
+            <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <style>
-            .heading_right {
-                text-align: center;
+            body {
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+            }
+            div.img {
+                background-image: url("Images/hexagon.png");
+                background-position: auto;
+                background-repeat: no-repeat;
+                background-size: contain;
                 float: right;
-                border-style: solid;
-                border-color: aliceblue;
-                border-left:rgba(185, 184, 184, 0.6);
-                border-bottom:rgba(185, 184, 184, 0.6);
-                border-radius: 25px;
-                background-color: rgba(185, 184, 184, 0.6);
-                padding: 20px;
-                width: 260px;
-                height: 400px;
-                margin-right: 0px;
-                margin-left: 0px;
-
+                width: 100vh;
+                height: auto;
+                padding: none;
+                background-clip: content-box;
+                transition: transform 1s;
             }
-            
-                
-                
-            
-            .heading_main {
-                text-align: center;
-                float: left;
-                border-style: solid;
-                border-color: aliceblue;
-                border-right:rgba(185, 184, 184, 0.6);
-                border-top:rgba(185, 184, 184, 0.6);
-                border-radius: 25px;
-                background-color: rgba(185, 184, 184, 0.6);
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-top: 10px;
-                padding-bottom: 30px;
-                width: 900px;
-                height: 400px;
-                margin-left: 0px;
-                margin-right: 0px;
-                margin-bottom: 10px;
-
-            }
-
-            .heading_bottom {
-                text-align: center;
-                line-height: 0px;
-                float: left;
-                border-style: solid;
-                border-color: aliceblue;
-                border-right:rgba(185, 184, 184, 0.6);
-                border-left:rgba(185, 184, 184, 0.6);
-                border-radius: 25px;
-                background-color: rgba(185, 184, 184, 0.6);
-                padding: 20px;
-                width: 1208px;
-                height: 140px;
-                margin-bottom: 10px;
-                margin-top: 20px;
-                margin-right: auto;
-                margin-left: auto;
-             }
-
-            .heading_top {
-                text-align: center;
-                padding-bottom: 8px;
-                border-style: solid;
-                border-color: aliceblue;
-                border-top:rgba(185, 184, 184, 0.6);
-                border-left:rgba(185, 184, 184, 0.6);
-                border-radius: 25px;
-                background-color: rgba(185, 184, 184, 0.6);
+            div.img2 {
+                background-image: url("Images/thomas2.png");
+                background-position: 93% 0%;
+                background-repeat: no-repeat;
+                background-size: contain;
+                height: 110vh;
                 width: auto;
-                height: 100px;
-                margin-top: 10px;
-                margin-bottom: 20px;
-                
+                padding: 5px;
+                background-clip: padding-box;
+                transition: transform 1s;
             }
-            .character {
-                width: 100%;
-                height: 545px;
-                border-style: solid;
-                border-color: aliceblue;
-                border-right:rgba(185, 184, 184, 0.6);
-                border-bottom:rgba(185, 184, 184, 0.6);
-                border-radius: 25px;
-                background-color: rgba(185, 184, 184, 0.6);
-                margin-bottom: 10px;
-                margin-top: 480px;
+            div.img:hover {
+                transform: translate(5px, 5px);
+            }
+            div.img2:hover {
+                transform: translate(-10px, -10px);
+            }
+            .intro {
+                float: left;
+                width: auto;
+                height: auto;
+                margin-top: 10vh;
+                margin-bottom: 90vh;
+                margin-left: 20px;
                 margin-right: 0px;
-                margin-left: 0px;
-            } 
-            .grid {
-                display: grid;
-                grid-template-columns: 400px 400px 400px;
-                grid-template-rows: 250px 250px 250px;
-                grid-row-gap: 10px;
-                grid-column-gap: 10px;
-                justify-content: center;
-                padding: 15px;
-                
-            }
-            .grid > div {
-                color: black;
-                background-color: transparent;
+                z-index: 400;
                 border-style: solid;
-                border-color: white;
-                border-radius: 10px;
-                text-align: center;
-                font-size: 30px;
-                justify-content: center;
-                transition: 1s;
+                border-color: transparent;
+                border-right:rgba(185, 184, 184, 0.6);
+                border-top:rgba(185, 184, 184, 0.6);
+                border-radius: 25px;
+                background-color: transparent;
+                padding: 10px;
             }
-            .grid > div:hover {
-                background-color: rgba(253, 178, 39, 0.3); 
+            h1 {
+                font-family: "abel";
+                font-size: 60px;
+                color: orange;
             }
             h3 {
-                font-family: abel;
-                color: black;
-                
-            }
-            i {
-                color: rgb(253, 178, 39);
-                padding-top: 30px;
-                padding-bottom: 10px;
-                font-size: 60px;
-            }
-            body {
-                background-image: url('Images/sunset.jpg');
-                background-size: cover;
-                background-attachment: fixed;
-                
-            }
-            .main_p {
-                clear: right;
-                font-family: "helvetica" ;
-                text-align: justify;
-                padding-top: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-                }
-
-            .quote {
-                text-align: center;
-                padding-bottom: inherit;
-                font-size: 18px;
-                font-family: "helvetica";
-                padding-top: 20px;
-                padding-bottom: 10px;
-            }
-
-            .font_minim {
                 font-family: "abel";
-                color: aliceblue;
+                font-size: 30px;
+                color: gray;
             }
-            .topnavbar {
-                background-color: black;
-
-            }
-                
-            .button {
+            button {
+                size: 20px 10px;
                 background-color: transparent;
-                border: none;
-                padding: 15px 32px;
-                text-align: center;
-                text-decoration: none;
-                display: inline-block;
-                font-size: 16px;
-                margin: 4px 2px;
-                cursor: pointer;
-                
-                
-            }
-            ul {
-                list-style-type: none;
-                margin: 0px;
-                padding-top: 0px;
-                padding-bottom: 0px;
-                padding-left: 0px;
-                padding-right: 0px;
-                overflow: hidden;
-                background-color: transparent;
-                border-radius: 0px;
-            }
-            li {
-                float: left;
-                text-align: center;
-                margin: 5px;
-                margin-bottom: 0px;
-                text-decoration: none;
-                padding-top: 0px;
-                padding-bottom: 0px;
-                padding-left: 25px;
-                padding-right:25px;
-                font-family: "abel";
                 border-style: solid;
                 border-radius: 5px;
-                background-color: transparent;
                 border-color: whitesmoke;
-                transition: .75s;
+                padding: 10px;
+                margin-top: 50px;
+                margin-right: 10px;
+                font-family: "helvetica";
+                font-size: 20px;
+                transition: linear;
+                transition-duration: .5s;
             }
-            li:hover {
-                border-color: rgb(253, 178, 39);
+            button:hover {
+                border-color: orange;
+
             }
-            .liindex {
-                
-                background-color: transparent;
-                border-bottom-left-radius: 25px;
-                margin-left: 0px;
-            }
-            
-            
-            .licon {
-                background-color: transparent;
-                border-color: rgb(253, 178, 39);
-                
-            }
-            a {
-                position: relative;
-                display: block;
-                padding: 8px;
-                color: black;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            .tooltip {
-                position: relative;
-                display: inline-block;
-            }
-            .tooltip .tooltiptext {
-                visibility: hidden;
-                width: inherit;
-                height: inherit;
-                background-color: transparent;
-                color: transparent;
-                text-align: center;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 16px;
-                padding: 5px 0;
-                border-radius: 10px;
-                position: absolute;
-                z-index: 1;
-                top: 0px;
-                left: 0%;
-                transition: ease-in .5s;
-            }
-            .tooltip:hover .tooltiptext {
-                visibility: visible;
-                background-color: rgba(233, 232, 231, 0.7);
-                color: black;
-            }
-            </style>
+        </style>
     </head>
-    <!--This is where my body starts.-->
     <body>
-        <header>
-            <div class="heading_top">
-                <h1 style="color:aliceblue; font-family: abel;">Thomas Joseph Cottis</h1>
-                    <ul>
-                        <li class="liindex"><a href="index.html">Home</a></li>
-                        <li><a href="Education.html">Education</a></li>
-                        <li><a href="Skills.html">Skills</a></li>
-                        <li><a href="Accomplishments.html">Accomplishments</a></li>
-                        <li class="licon"><a href="Contact.html">Contact</a></li>
-                    </ul>
-                        
+        
+            <div class="img">
+                <div class="img2"></div>
             </div>
-        </header>
-            <div class="heading_right">
-                <h2 class="font_minim">What you will need to know about me:</h2>
-                <p> this should show up in the right side bar</p>
-                <nav>
-                    <ul>
-                        
-                    </ul>
-                </nav>
+            <div class="intro">
+                    <h1>Hi! My name is Thomas!</h1>
+                    <h3>I help the world create modern and creative<br> websites!</h3>
+                    <button><a href="Home.html">Explore My Portfolio!</a></button> <button><a href="Contact.html">Contact Me!</a></button>
+                    <button style="border-style: solid; border-color: orange;">Download My CV</button>
             </div>
             
-                
-                    <div class="heading_main">
-                        
-                        
-                        <img src="Images/thomas_johana.jpeg" alt="Me and Joha"
-                        style="float:left;width:400px;height:200px; padding-right: 10px; padding-bottom: 0px; padding-top: 5px; padding-left: 0px; border-radius: 25px 25px 25px;">
-                        <div class="main_p">
-                        <p>Hello! My name is Thomas Cottis and I help companies and businesses create modern, asthetic and dynamic websites. Here in this portfolio you'll find my character
-                        strengths, achievments, skills and education history. You'll also come to find that I am an ambitious monster who feasts on learning new skills and 
-                        helping others reach their full potencial. May the universe send its worst.</p>
-                        <p></p>
-                        <p>Experts say that first impressions are really made before the talking even starts, that's why you're going to see a lot of different images here.
-                         Not just of me and my sweet wife Johana, but of the places that bring me the most peace, like the sand dunes, the deep, snowed over evergreen forests and 
-                        the ocean.</p>
-                        </div>
-                        <p class="quote">"The capacity to learn is a <em>gift;</em> the ability to learn is a <em>skill;</em> the willingness to learn is a <em>choice.</em> - Brian Herbert.</p>
-                        
-                    </div>
-                    
-                
-                    
-                        
-                    <div class="character">
-                        
-                            <div class="grid">
-                                <div class="tooltip">
-                                        <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
-                                    <span class="tooltiptext">When it came time to finally choose a careerpath, I first went with my gut and went into something
-                                        technical like being a mechanic, but I quickly found out that programming was the route that I always really wanted, but never knew how to 
-                                    harness until now. I am decided because I know that this is the life for me and I am willing to make it happen.</span>
-                                </div>
-                                <div class="tooltip">
-                                        <div><i class="fas fa-search-dollar"></i><h3>Business</br>Oriented</h3></div>
-                                    <span class="tooltiptext">Being business oriented has grasped me since my first job at a local car wash to now. It didn't matter
-                                        what the job was as long as I knew that I'm able to make money only because I'm helping the business make money. Knowing this has 
-                                        greatly improved my perspective of how we can work together to make more money together.
-                                    </span>
-                                </div>  
-                                        <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
-                                        <div><i class="fas fa-paint-brush"></i><h3>Creative</h3></div>
-                                        <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
-                                        <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
-                                
-                            </div>
-                        
-                    </div>
-                    
     </body>
 </html>
