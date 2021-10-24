@@ -1,0 +1,152 @@
+.character {
+    width: 100%;
+    height: auto;
+    border-style: solid;
+    border-color: rgb(253, 178, 39);
+    border-radius: 10px;
+    background-color: rgba(241, 241, 240, 0.6);
+    margin-top: auto;
+    margin-right: auto;
+    margin-left: auto;
+} 
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 40% 40% 40%;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    justify-content: center;
+    padding: 15px;
+    margin: auto;
+}
+.grid > div {
+    overflow: hidden;
+    color: black;
+    background-color: transparent;
+    border-style: solid;
+    border-color: gray;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 30px;
+    justify-content: center;
+    transition: .3s;
+}
+.grid > div:hover {
+    background-color: rgba(56, 55, 53, 0.6); 
+}
+h1 {
+    color: gray;
+    font-family: abel;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
+h3 {
+    font-family: abel;
+    color: black;
+    font-size: 40px;
+    padding-top: none;
+    padding-bottom: 50px;
+}
+body {
+    background-image: url('Images/PicsArt_10-16-10.26.14.png');
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+nav {
+    list-style-type: none;
+    padding-bottom: 18px;
+    overflow: hidden;
+    background-color: transparent;
+}
+li {
+    float: left;
+    text-align: center;
+    margin: 5px;
+    margin-bottom: 10px;
+    margin-left: 0px;
+    text-decoration: none;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 25px;
+    padding-right:25px;
+    font-family: "abel";
+    border-style: solid;
+    border-radius: 5px;
+    background-color: transparent;
+    border-color: gray;
+    transition: .2s;
+}
+li:hover {
+    border-color: rgb(253, 178, 39);
+}
+.liindex {   
+    margin-left: 0px;
+}
+.licon {
+    border-color: rgb(253, 178, 39);
+}  
+.tooltip {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    display: inline-block;
+   
+}
+.tooltip .tooltiptext {
+    
+    visibility: hidden;
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding: 5px 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0%;
+    transition: ease-in .3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: inherit;
+    background-color: rgba(255, 166, 0, 0.6);
+    color: black;
+    font-family: Zen maru gothic;
+}
+.tooltiptext {
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+caption {
+    font-family: Zen maru gothic;
+    color: black;
+    font-size: 50px;
+    padding: 30px;
+}
+table, th, td {
+    font-family: Zen maru Gothic;
+    color: black;
+    border: solid orange;
+    border-radius: 10px;
+}
+table {
+    border-collapse: collapse;
+    width: 75vw;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(241, 241, 240, 0.6);
+    text-align: center;
+    
+}
+td, th {
+    text-align: center;
+    padding: 20px;
+}
+th {
+    font-size: 20px;
+}  
