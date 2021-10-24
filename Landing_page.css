@@ -109,25 +109,19 @@ a {
     body {
         overflow: scroll;
     }
-    h1 h3 {
-        width: auto;
-        margin: auto;
-    }
     .intro {
-        position: absolute;
-        margin: 0 auto;
+        position: relative;
         width: auto;
         height: auto;
         left: 50%;
-        top: 50%;
-        margin-left: -250px;
-        margin-top: 600px;
+        transform: translate(-50%);
         text-align: center;
     }
     .button_pos  {
         position: relative;
-        margin: auto;
-        width: 300px;
+        left: 50%;
+        transform: translate(-50%);
+        width: auto;
     }
     
 }

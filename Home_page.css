@@ -75,6 +75,12 @@
     font-family: "Abel";
     color: aliceblue;
 }
+h1 {
+    color: gray;
+    font-family: abel;
+    margin-top: 0px;
+    margin-bottom: 7px;
+}
 h3 {
     font-family: abel;
     color: black;
@@ -187,4 +193,9 @@ a.contact::before {
     visibility: visible;
     background-color: rgba(255, 165, 0, 0.4);
     color: black;
+}
+table {
+    border: 1px solid orange;
+    width: 100%;
+
 }
