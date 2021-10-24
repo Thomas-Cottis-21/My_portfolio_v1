@@ -5,276 +5,84 @@
         <title>Home</title>
         <!--This is where I begin to style my document by placing div tags.-->
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Home_page.css">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
-        <style> 
-            .heading_main {
-                text-align: center;
-                border-style: solid;
-                border-color: rgb(253, 178, 39);
-                border-radius: 10px;
-                background-color: rgba(241, 241, 240, 0.6);
-                width: 100%;
-                height: 400px;
-                margin-top: 10px;
-                margin-bottom: 20px;
-            }
-            .heading_top {
-                text-align: center;
-                border-style: solid;
-                border-color: rgb(253, 178, 39);
-                border-radius: 10px;
-                background-color: rgba(241, 241, 240, 0.6);
-                width: 100%;
-                height: 100px;
-                margin-top: 10px;
-                margin-bottom: 10px; 
-            }
-            .character {
-                width: 100%;
-                height: 545px;
-                border-style: solid;
-                border-color: rgb(253, 178, 39);
-                border-radius: 10px;
-                background-color: rgba(241, 241, 240, 0.6);
-                margin-bottom: 10px;
-                margin-top: auto;
-                margin-right: 0px;
-                margin-left: 0px;
-            } 
-            .grid {
-                display: grid;
-                grid-template-columns: 33% 33% 33%;
-                grid-template-rows: 40% 40% 40%;
-                grid-row-gap: 10px;
-                grid-column-gap: 10px;
-                justify-content: center;
-                padding: 15px;
-                margin: auto;
-            }
-            .grid > div {
-                color: black;
-                background-color: transparent;
-                border-style: solid;
-                border-color: gray;
-                border-radius: 10px;
-                text-align: center;
-                font-size: 30px;
-                justify-content: center;
-                transition: 1s;
-            }
-            .grid > div:hover {
-                background-color: rgba(253, 178, 39, 0.3); 
-            }
-            .main_p {
-                clear: right;
-                font-family: "helvetica" ;
-                text-align: justify;
-                padding-top: 10px;
-                padding-left: 10px;
-                padding-right: 10px;
-                padding-bottom: 10px;
-                }
-            .quote {
-                text-align: center;
-                position: inherit;
-                font-size: 18px;
-                font-family: "helvetica";
-            }
-            .font_minim {
-                font-family: "Abel";
-                color: aliceblue;
-            }
-            h3 {
-                font-family: abel;
-                color: black;
-                font-size: 40px;
-                padding: 15px;
-            }
-            i {
-                color: rgb(253, 178, 39);
-                padding-top: 15px;
-                padding-bottom: 10px;
-                font-size: 100px;
-            }
-            body {
-                background-image: url('Images/PicsArt_10-16-10.26.14.png');
-                background-size: contain;
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-            }
-            a {
-                position: relative;
-                display: block;
-                padding: 8px;
-                color: black;
-                padding-left: 10px;
-                padding-right: 10px;
-            }
-            nav {
-                list-style-type: none;
-                padding-bottom: 18px;
-                overflow: hidden;
-                background-color: transparent;
-            }
-            li {
-                float: left;
-                text-align: center;
-                margin: 5px;
-                margin-bottom: 10px;
-                margin-left: 0px;
-                text-decoration: none;
-                padding-top: 0px;
-                padding-bottom: 0px;
-                padding-left: 25px;
-                padding-right:25px;
-                font-family: "abel";
-                border-style: solid;
-                border-radius: 5px;
-                background-color: transparent;
-                border-color: gray;
-                transition: .5s;
-            }
-            li:hover {
-                border-color: rgb(253, 178, 39);
-            }
-            .liindex {   
-                margin-left: 0px;
-            }
-            .licon {
-                border-color: rgb(253, 178, 39);
-            }
-            a.home::before {
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f6a7";
-                padding-right: 5px;
-                font-size: 20px;
-            }
-            a.index::before {
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f053";
-                padding-right: 5px;
-                font-size: 20px;
-            }
-            a.about::before {
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f2bb";
-                padding-right: 5px;
-                font-size: 20px;
-            }
-            a.contact::before {
-                font-family: "Font Awesome 5 Free";
-                font-weight: 900;
-                content: "\f653";
-                padding-right: 5px;
-                font-size: 20px;
-            }
-            .tooltip {
-                position: relative;
-                display: inline-block;
-            }
-            .tooltip .tooltiptext {
-                visibility: hidden;
-                width: inherit;
-                height: inherit;
-                background-color: transparent;
-                color: transparent;
-                text-align: center;
-                font-family: Helvetica, Arial, sans-serif;
-                font-size: 16px;
-                padding: 5px 0;
-                border-radius: 10px;
-                position: absolute;
-                z-index: 1;
-                top: 0px;
-                left: 0%;
-                transition: ease-in .5s;
-            }
-            .tooltip:hover .tooltiptext {
-                visibility: visible;
-                background-color: rgba(255, 165, 0, 0.4);
-                color: black;
-            }
-            </style>
     </head>
     <!--This is where my body starts.-->
     <body>
         <header>
             <div class="heading_top">
                 <h1 style ="color: gray; font-family: abel; margin-top: 0px; margin-bottom: 7px">Home</h1>
-                    <nav>
-                        <li><a class="index" href="index.html">Landing Page</a></li>
-                        <li><a class="home" href="Home.html">Home</a></li>
-                        <li><a class="about" href="About.html">About</a></li>
-                        <li class="licon"><a class="contact" href="Contact.html">Contact</a></li>
-                    </nav>
+                <nav>
+                    <li><a class="index" href="index.html">Landing Page</a></li>
+                    <li><a class="home" href="Home.html">Home</a></li>
+                    <li><a class="about" href="About.html">About</a></li>
+                    <li class="licon"><a class="contact" href="Contact.html">Contact</a></li>
+                </nav>
                         
             </div>
         </header>
-                    <div class="heading_main">
-                        
-                        
-                        <img src="Images/thomas_johana.jpeg" alt="Me and Joha"
-                        style="float:left;width:400px;height:200px; padding-right: 10px; padding-bottom: 0px; padding-top: 5px; padding-left: 5px; border-radius: 25px;">
-                        <div class="main_p">
+            <div class="heading_main">
+                
+                
+                <img src="Images/thomas_johana.jpeg" alt="Me and Joha"
+                style="float:left;width:400px;height:200px; padding-right: 10px; padding-bottom: 0px; padding-top: 5px; padding-left: 5px; border-radius: 25px;">
+                    <div class="main_p">
                         <p>     Hello! My name is Thomas Cottis and I help companies and businesses create modern, asthetic and dynamic websites. Here in this portfolio you'll find my character
                         strengths, achievments, skills and education history. You'll also come to find that I am an ambitious monster who feasts on learning new skills and 
                         helping others reach their full potencial. </p>
                         <p>     If you're scrolling through my portfolio, that means that you too are an ambitious monster who hungers for hardwork and creative ideas.
-                             It probably also means that you and me have similar goals. Let's collabortate to make our world a more creative one.</p>
+                            It probably also means that you and me have similar goals. Let's collabortate to make our world a more creative one.</p>
                         <p></p>
-                        </div>
-                        <p class="quote">"The capacity to learn is a <em>gift;</em> the ability to learn is a <em>skill;</em> the willingness to learn is a <em>choice.</em> - Brian Herbert.</p>
-                        
-                    </div>   
-                    <div class="character">
-                        
-                            <div class="grid">
-                                <div class="tooltip">
-                                        <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
-                                    <span class="tooltiptext">When it came time to finally choose a careerpath, I first went with my gut and went into something
-                                        technical like being a mechanic, but I quickly found out that programming was the route that I always really wanted, but never knew how to 
-                                    harness until now. I am decided because I know that this is the life for me and I am willing to make it happen.</span>
-                                </div>
-                                <div class="tooltip">
-                                        <div><i class="fas fa-search-dollar"></i><h3>Business Oriented</h3></div>
-                                    <span class="tooltiptext">Being business oriented has grasped me since my first job at a local car wash to now. It didn't matter
-                                        what the job was as long as I knew that I'm able to make money only because I'm helping the business make money. Knowing this has 
-                                        greatly improved my perspective of how we can work together to make more money together.
-                                    </span>
-                                </div> 
-                                <div class="tooltip"> 
-                                        <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
-                                    <span class="tooltiptext">Another word for "Engineer" is "Problem-Solver". Anybody who has ever created anything finds out really early on that problems are part of the process.
-                                        From welding up a new project to 3D printing a new prototype, figuring things out has given me success in everything that I put my mind to.
-                                    </span>
-                                </div>
-                                <div class="tooltip">
-                                        <div><i class="fas fa-paint-brush"></i><h3>Creative</h3></div>
-                                        <span class="tooltiptext">Being creative has taken a new meaning for me because of the many talents that I have. I love thinking of new furniture
-                                            designs that I can fabricate, original designs to built with the 3D printer and updated software that I can write. Creativeness is something that I was definintely
-                                            born with. Finding new ideas that are born right inside my own mind is a passion of mine that I will never lose.
-                                        </span>
-                                </div>
-                                <div class="tooltip">
-                                        <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
-                                        <span class="tooltiptext">I really became a focused person when I went on my mission to Lima, Peru. There I worked with my companions to spread the gospel everyday to the people there.
-                                            This is so because in order to be successful there it takes weeks of hard work tightly collaborated in every case. If focus is lost, the case is as well. When I returned
-                                            I could easily get to work on multiple projects of completely different styles at the same time and be successfulin all.
-                                        </span>
-                                </div>
-                                <div class="tooltip">
-                                        <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
-                                        <span class="tooltiptext">I'm a quick learner because of my past expiriences. Along with being focused on my objectives, picking things up rapidly is 
-                                            who I am. I became fluent in Spanish in just 6 months. I became sufficient in welding in just over 8. There are many other skills that I have developed 
-                                            like sowing, web design and snowboarding that I have managed to master because of my focus, creativity and problem-solving character.
-                                        </span>
-                                </div>
-                            </div>
-                        
                     </div>
-                    
+                <p class="quote">"The capacity to learn is a <em>gift;</em> the ability to learn is a <em>skill;</em> the willingness to learn is a <em>choice.</em> - Brian Herbert.</p>
+                
+            </div>   
+            <div class="character">
+                
+                <div class="grid">
+                    <div class="tooltip">
+                            <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
+                        <span class="tooltiptext">When it came time to finally choose a careerpath, I first went with my gut and went into something
+                            technical like being a mechanic, but I quickly found out that programming was the route that I always really wanted, but never knew how to 
+                        harness until now. I am decided because I know that this is the life for me and I am willing to make it happen.</span>
+                    </div>
+                    <div class="tooltip">
+                            <div><i class="fas fa-search-dollar"></i><h3>Business Oriented</h3></div>
+                        <span class="tooltiptext">Being business oriented has grasped me since my first job at a local car wash to now. It didn't matter
+                            what the job was as long as I knew that I'm able to make money only because I'm helping the business make money. Knowing this has 
+                            greatly improved my perspective of how we can work together to make more money together.
+                        </span>
+                    </div> 
+                    <div class="tooltip"> 
+                            <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
+                        <span class="tooltiptext">Another word for "Engineer" is "Problem-Solver". Anybody who has ever created anything finds out really early on that problems are part of the process.
+                            From welding up a new project to 3D printing a new prototype, figuring things out has given me success in everything that I put my mind to.
+                        </span>
+                    </div>
+                    <div class="tooltip">
+                            <div><i class="fas fa-paint-brush"></i><h3>Creative</h3></div>
+                            <span class="tooltiptext">Being creative has taken a new meaning for me because of the many talents that I have. I love thinking of new furniture
+                                designs that I can fabricate, original designs to built with the 3D printer and updated software that I can write. Creativeness is something that I was definintely
+                                born with. Finding new ideas that are born right inside my own mind is a passion of mine that I will never lose.
+                            </span>
+                    </div>
+                    <div class="tooltip">
+                            <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
+                            <span class="tooltiptext">I really became a focused person when I went on my mission to Lima, Peru. There I worked with my companions to spread the gospel everyday to the people there.
+                                This is so because in order to be successful there it takes weeks of hard work tightly collaborated in every case. If focus is lost, the case is as well. When I returned
+                                I could easily get to work on multiple projects of completely different styles at the same time and be successfulin all.
+                            </span>
+                    </div>
+                    <div class="tooltip">
+                            <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
+                            <span class="tooltiptext">I'm a quick learner because of my past expiriences. Along with being focused on my objectives, picking things up rapidly is 
+                                who I am. I became fluent in Spanish in just 6 months. I became sufficient in welding in just over 8. There are many other skills that I have developed 
+                                like sowing, web design and snowboarding that I have managed to master because of my focus, creativity and problem-solving character.
+                            </span>
+                    </div>
+                </div>
+            </div>
+        
     </body>
 </html>

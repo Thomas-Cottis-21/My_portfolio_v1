@@ -2,16 +2,53 @@
 <html>
     <head>
         <title>Contact</title>
+        <link rel="stylesheet" href="Contact_style.css">
     </head>
     <body>
         <h1> Contact Page</h1>
-        <p>This is where contacting will take place.</p>
+        <p>Thank you for your time</p>
         <ul>
             <li><a href="index.html">Landing Page</a></li>
             <li><a href="Home.html">Home</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Contact.html">Contact</a></li>
         </ul>
+        <form action="https://form-test.slccwebdev.com/form-success.php" method="get">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name"><br>
 
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br>
+            
+
+            <label for="number">Phone Number:</label>
+            <input type="text" name="number" id="number"><br>
+            
+            <label for="comments">Comments/Recomendations:</label><br>
+            <textarea id="comments" name="comments" cols="50"rows="4" maxlength="500">
+                Please comment here...
+            </textarea><br>
+
+            <p>Can I contact you?</p>
+            <input type="radio" id="yes" name="contact-back" value="yes">
+            <label for="yes">Yes</label>
+
+            <input type="radio" id="no" name="contact-back" value="no">
+            <label for="no">No</label>
+
+            <p>Best Contact Methods:</p>
+            <input type="checkbox" id="contactphone" name="contact-phone" value="Phone">
+            <label for="phone">Call</label>
+
+            <input type="checkbox" id="contactext" name="contact-text" value="Text">
+            <label for="text">Text</label>
+
+            <input type="checkbox" id="contactemail" name="contact-email" value="Email">
+            <label for="email">Email</label><br>
+            
+            <button>Submit</button>
+        
+            
+        </form>
     </body>
 </html>
