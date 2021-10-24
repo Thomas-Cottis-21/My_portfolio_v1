@@ -22,15 +22,14 @@
 }
 .character {
     width: 100%;
-    height: 545px;
+    height: auto;
     border-style: solid;
     border-color: rgb(253, 178, 39);
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
-    margin-bottom: 10px;
     margin-top: auto;
-    margin-right: 0px;
-    margin-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
 } 
 .grid {
     display: grid;
@@ -43,6 +42,7 @@
     margin: auto;
 }
 .grid > div {
+    overflow: hidden;
     color: black;
     background-color: transparent;
     border-style: solid;
@@ -51,10 +51,10 @@
     text-align: center;
     font-size: 30px;
     justify-content: center;
-    transition: 1s;
+    transition: .3s;
 }
 .grid > div:hover {
-    background-color: rgba(253, 178, 39, 0.3); 
+    background-color: rgba(56, 55, 53, 0.6); 
 }
 .main_p {
     clear: right;
@@ -85,7 +85,8 @@ h3 {
     font-family: abel;
     color: black;
     font-size: 40px;
-    padding: 15px;
+    padding-top: none;
+    padding-bottom: 50px;
 }
 i {
     color: rgb(253, 178, 39);
@@ -129,7 +130,7 @@ li {
     border-radius: 5px;
     background-color: transparent;
     border-color: gray;
-    transition: .5s;
+    transition: .2s;
 }
 li:hover {
     border-color: rgb(253, 178, 39);
@@ -169,10 +170,14 @@ a.contact::before {
     font-size: 20px;
 }
 .tooltip {
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
     display: inline-block;
+   
 }
 .tooltip .tooltiptext {
+    
     visibility: hidden;
     width: inherit;
     height: inherit;
@@ -187,15 +192,45 @@ a.contact::before {
     z-index: 1;
     top: 0px;
     left: 0%;
-    transition: ease-in .5s;
+    transition: ease-in .3s;
 }
 .tooltip:hover .tooltiptext {
-    visibility: visible;
-    background-color: rgba(255, 165, 0, 0.4);
+    visibility: inherit;
+    background-color: rgba(255, 166, 0, 0.6);
     color: black;
+    font-family: Zen maru gothic;
+}
+.tooltiptext {
+    overflow-x: hidden;
+    overflow-y: auto; 
+}
+caption {
+    font-family: Zen maru gothic;
+    color: black;
+    font-size: 50px;
+    padding: 30px;
+}
+table, th, td {
+    font-family: Zen maru Gothic;
+    color: black;
+    border: solid orange;
+    border-radius: 10px;
 }
 table {
-    border: 1px solid orange;
-    width: 100%;
-
+    border-collapse: collapse;
+    width: 75vw;
+    font-size: 16px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: rgba(241, 241, 240, 0.6);
+    text-align: center;
+    
 }
+td, th {
+    text-align: center;
+    padding: 20px;
+}
+th {
+    font-size: 20px;
+}
+
