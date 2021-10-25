@@ -61,12 +61,6 @@ i {
     overflow-y: auto;
     background-color: rgba(56, 55, 53, 0.6); 
 }
-h1 {
-    color: gray;
-    font-family: abel;
-    margin-top: 0px;
-    margin-bottom: 7px;
-}
 h3 {
     font-family: abel;
     color: black;
@@ -114,6 +108,7 @@ li:hover {
     border-color: rgb(253, 178, 39);
 }  
 a {
+    text-decoration: none;
     position: relative;
     display: block;
     padding: 8px;
