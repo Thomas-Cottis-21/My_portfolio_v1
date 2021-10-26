@@ -5,11 +5,11 @@ body {
 }
 div.img {
     background-image: url("Images/hexagon.png");
-    background-position: auto;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
     float: right;
-    width: 100vh;
+    width: 100%;
     height: auto;
     padding: none;
     background-clip: content-box;
@@ -93,16 +93,23 @@ a {
 }
 @media (max-width: 1556px) {
     .intro {
-        width: 50vw;
         height: auto;
+        
+    }
+    h1 {
+        color: red;
     }
 }
 @media (max-width: 1472px) {
     .intro {
-        width: 30vw;
+        width: 100vw;
+        font-size: 50%;
+        height: auto;
+       
     }
     h1 {
-        width: 50vw;
+        color: green;
+
     }
 }
 @media (max-width: 1360px) {
