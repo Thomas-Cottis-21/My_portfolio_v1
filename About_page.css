@@ -158,10 +158,10 @@ a.contact::before {
     visibility: hidden;
     width: inherit;
     height: inherit;
-    background-color: transparent;
+    background-color: red;
     color: transparent;
     text-align: center;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: spartan;
     font-size: 16px;
     padding: 5px 0;
     border-radius: 10px;
