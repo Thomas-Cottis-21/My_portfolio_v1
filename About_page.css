@@ -69,7 +69,7 @@ h3 {
     padding-bottom: 50px;
 }
 body {
-    background-image: url('Images/PicsArt_10-16-10.26.14.png');
+    background-image: url("Images/hexagon_gray.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -175,20 +175,20 @@ a.contact::before {
     visibility: inherit;
     background-color: rgba(255, 166, 0, 0.6);
     color: black;
-    font-family: Zen maru gothic;
+    
 }
 .tooltiptext {
     overflow-x: hidden;
-    overflow-y: auto; 
+    overflow-y: auto;
+    font-family: spartan; 
 }
 caption {
-    font-family: Zen maru gothic;
+    font-family: abel;
     color: black;
     font-size: 50px;
     padding: 30px;
 }
 table, th, td {
-    font-family: Zen maru Gothic;
     color: black;
     border: solid orange;
     border-radius: 10px;
@@ -202,10 +202,13 @@ table {
     background-color: rgba(241, 241, 240, 0.6);
     text-align: center;
 }
-td, th {
+td {
     text-align: center;
     padding: 20px;
+    font-family: spartan;
 }
 th {
     font-size: 20px;
+    font-family: abel;
+    padding: 20px;
 }  
