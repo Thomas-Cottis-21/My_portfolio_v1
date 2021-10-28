@@ -5,47 +5,26 @@ body {
 
 .container {
     display: flex;
-    flex-direction: row-reverse;
-    width: 100%;
-    height: 100%;
-}
-
-.hexagon {
-    position: relative;
-    background-image: url("Images/hexagon.png");
-    background-size: cover;
-    float: right;
-    height: auto;
-    width: 100%;
-    background-repeat: no-repeat;
-    z-index: -1;
-}
-
-img {
-    position: relative;
-    left: 250px;
-    width: auto;
-    height: 110vh;
-    filter: drop-shadow(8px 8px 10px red);
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
 }
 
 .title {
-    display: flex;
     position: relative;
-    flex-direction: column;
     word-wrap: break-word;
     text-align: left;
     width: 50%;
-    z-index: 1;
+    margin-left: 15px;
 }
 
 h1 {
-    display: flex;
     white-space: nowrap;
     font-family: abel;
     font-size: 120px;
     color: orange;
-    margin: 10px;
+    margin-bottom: 0px;
 }
 
 h3 {
@@ -53,12 +32,11 @@ h3 {
     font-family: abel;
     font-size: 60px;
     color: gray;
-    width: auto;
-    word-wrap: break-word;
-    margin: 10px;
+    margin-top: 0px;
 }
 
 .flexbox-button {
+    display: flex;
     flex-direction: row;
 
 }
@@ -73,14 +51,31 @@ button {
     color: gray;
     width: 300px;
     height: 100px;
-    margin: 20px;
+    margin: 10px;
+    margin-left: 0;
     transition: ease-in-out;
     transition-duration: 0.2s;
 }
 
 button:hover {
-    border-color: orange;
-    color: black;
+    border-color: #ff5900;
+    color: #ff5900;
+}
+
+.pics {
+    display: flex;
+    justify-content: right;
+}
+
+img {
+    width: auto;
+    height: 100vh;
+    justify-content: right;
+    transition-duration: .5s;
+}
+
+img:hover {
+    transform: scale(1.05);
 }
 
 @media screen and (max-width: 320px){
@@ -89,16 +84,21 @@ button:hover {
     }
 
     .container {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column-reverse;
         justify-content: center;
-        align-items: center;
-        width: 100vw;
+        align-content: center;
+        width: 100%;
+        height: 100%;
     }
 
     .title {
         text-align: center;
         justify-content: center;
         align-items: center;
+        width: 75vw;
+        height: auto;
+        margin: auto;
     }
 
     h1 {
@@ -109,86 +109,97 @@ button:hover {
     h3 {
         font-size: 40px;
     }
-
-    .hexagon {
-        position: relative;
-        left: 30px;
-        width: 100vw;
-        height: auto;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    img {
-        position: relative;
-        left: 20px;
-        width: 100vw;
-        height: auto;
-        
-    }
     
+    .flexbox-button {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
     button {
-        width: 100%;
+        width: 50vw;
         height: auto;
         padding: 5px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 20px;
+        margin: auto;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
+
+    .pics {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: auto;
+    }
+    img {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        width: 100vw;
+        height: auto;
     }
     }
 
-@media screen and (max-width: 481px) {
+@media screen and (min-width: 1280px) {
     body {
-        overflow: scroll;
+        overflow: hidden;
+        margin: 0;
     }
 
     .container {
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
         width: 100vw;
+        height: 100vh;
     }
 
     .title {
-        text-align: center;
-        justify-content: center;
-        align-items: center;
+        text-align: left;
+        justify-content: left;
+        align-items: left;
+        margin-left: 0;
+        width: 50vw;
+        height: 100%;
     }
 
     h1 {
-        font-size: 60px;
+        font-size: 100px;
         white-space: normal;
+        margin-left: 10px;
+        margin-bottom: 0px;
     }
 
     h3 {
         font-size: 40px;
-    }
-
-    .hexagon {
-        position: relative;
-        left: 30px;
-        width: 100vw;
-        height: auto;
-        justify-content: center;
-        align-items: stretch;
-    }
-
-    img {
-        position: relative;
-        left: 20px;
-        width: 100vw;
-        height: auto;
-        
+        margin-top: 0px;
+        margin-left: 10px;
     }
     
+    .flexbox-button {
+        display: flex;
+        flex-direction: column;
+
+    }
+
     button {
-        width: 100%;
+        width: 300px;
         height: auto;
-        padding: 5px;
-        margin: 5px;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+    .pics {
+        display: flex;
+        justify-content: right;
+        align-items: right;
+    }
+    img {
+        float: right;
     }
 }
