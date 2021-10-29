@@ -158,7 +158,7 @@ a.contact::before {
     visibility: hidden;
     width: inherit;
     height: inherit;
-    background-color: red;
+    background-color: transparent;
     color: transparent;
     text-align: center;
     font-family: spartan;
