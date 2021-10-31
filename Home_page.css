@@ -3,35 +3,36 @@ body {
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow: scroll;
 }
 
 .container {
     display: flex;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
     flex-direction: column;
-    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 .heading_top {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
     border-style: solid;
     border-color: rgb(253, 178, 39);
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
-    height: auto;
-    padding: 10px;
-    margin-top: 10px;
-    margin-bottom: 10px; 
+    height: 15vh;
+    margin: auto;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
 }
 
 .heading_main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     text-align: center;
-    padding: 10px;
     font-family: spartan;
     border-style: solid;
     border-radius: 10px;
@@ -40,19 +41,6 @@ body {
     width: 95vw;
     height: 50vh;
 }
-h1 {
-    color: gray;
-    font-family: abel;
-    margin: 0;
-}
-
-h3 {
-    font-family: abel;
-    color: black;
-    font-size: 40px;
-    padding-top: none;
-    padding-bottom: 50px;
-}
 
 nav {
     display: flex;
@@ -60,6 +48,7 @@ nav {
 }
 
 a {
+    display: flex;
     text-decoration: none;
 }
 
@@ -68,15 +57,15 @@ button {
     align-items: center;
     justify-content: center;
     text-align: center;
-    width: 10vw;
-    height: 5vh;
-    margin-left: 5px;
-    margin-right: 5px;
+    width: 20vw;
+    height: 10vh;
     color: gray;
     font-family: "abel";
-    font-size: 30px;
+    font-size: 40px;
     border-style: solid;
-    border-radius: 5px;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
     background-color: transparent;
     border-color: orange;
     transition: .2s;
@@ -92,7 +81,7 @@ button.home::before {
     font-weight: 900;
     content: "\f6a7";
     padding-right: 5px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 button.home {
@@ -103,9 +92,9 @@ button.home {
 button.index::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f053";
+    content: "\f100";
     padding-right: 5px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 button.about::before {
@@ -113,7 +102,7 @@ button.about::before {
     font-weight: 900;
     content: "\f2bb";
     padding-right: 5px;
-    font-size: 30px;
+    font-size: 50px;
 }
 
 button.contact::before {
@@ -121,5 +110,64 @@ button.contact::before {
     font-weight: 900;
     content: "\f653";
     padding-right: 5px;
-    font-size: 30px;
+    font-size: 50px;
 }
+
+@media screen and (max-width: 768px){
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+
+    .heading_top {
+        height: 10vh;
+    }
+
+    .heading_main {
+        height: auto;
+    }
+
+    button {
+        font-size: 20px;
+        flex-direction: column;
+        height: auto;
+        width: 20vw;
+    }
+
+    button.home::before {
+        font-size: 20px;
+    }
+
+    button.index::before {
+        font-size: 20px;
+    }
+
+    button.about::before {
+        font-size: 20px;
+    }
+
+    button.contact::before {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    button {
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    button {
+        font-size: 40px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    button {
+        font-size: 55px;
+    }
+}
+
