@@ -16,7 +16,6 @@ body {
     word-wrap: break-word;
     text-align: left;
     width: 50%;
-    margin-left: 15px;
 }
 
 h1 {
@@ -44,16 +43,16 @@ h3 {
 button {
     background-color: rgba(241, 241, 240, 0.6);
     border-style: solid;
-    border-radius: 10px;
+    border-top: transparent;
+    border-right: transparent;
+    border-left: transparent;
     border-color: orange;
     font-family: abel;
     font-size: 30px;
     color: gray;
     width: 300px;
     height: 100px;
-    margin: 10px;
     margin-top: 150px;
-    margin-left: 0;
     transition: ease-in-out;
     transition-duration: 0.2s;
 }
@@ -125,9 +124,6 @@ img:hover {
         width: 75vw;
         height: auto;
         padding: 5px;
-        margin: auto;
-        margin-right: 10px;
-        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 5px;
         font-size: 30px;
@@ -195,9 +191,6 @@ img:hover {
         height: auto;
         padding: 5px;
         font-size: 20px;
-        margin: auto;
-        margin-right: 10px;
-        margin-left: 10px;
         margin-top: 15px;
         margin-bottom: 5px;
         font-size: 40px;
@@ -272,7 +265,6 @@ img:hover {
         height: auto;
         font-size: 30px;
         padding: 10px;
-        margin: 10px;
     }
     .pics {
         display: flex;
@@ -337,7 +329,6 @@ img:hover {
         height: 100px;
         font-size: 30px;
         padding: 10px;
-        margin: 10px;
     }
     .pics {
         display: flex;

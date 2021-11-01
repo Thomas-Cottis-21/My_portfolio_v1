@@ -18,7 +18,7 @@ body {
     display: flex;
     align-items: center;
     border-style: solid;
-    border-color: rgb(253, 178, 39);
+    border-color: orange;
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
@@ -37,7 +37,7 @@ body {
     border-style: solid;
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
-    border-color: rgb(253, 178, 39);
+    border-color: orange;
     width: 95vw;
     height: 50vh;
 }
@@ -167,7 +167,7 @@ button.contact::before {
 
 @media screen and (min-width: 1440px) {
     button {
-        font-size: 55px;
+        font-size: 40px;
     }
 }
 
