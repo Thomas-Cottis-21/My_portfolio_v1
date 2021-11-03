@@ -26,8 +26,8 @@ i {
     font-size: 100px;
 }
 .character {
-    width: 100%;
-    height: auto;
+    width: 95vw;
+    height: 60vh;
     border-style: solid;
     border-color: rgb(253, 178, 39);
     border-radius: 10px;
@@ -37,15 +37,17 @@ i {
     margin-left: auto;
 } 
 .grid {
-    
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 40% 40% 40%;
+    grid-template-rows: 50% 50% 50%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     justify-content: center;
-    padding: 15px;
-    margin: auto;
+    padding-top: 1.3vh;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 .grid > div {
     
@@ -70,7 +72,6 @@ h3 {
     color: black;
     font-size: 40px;
     padding-top: none;
-    padding-bottom: 50px;
 }
 
 nav {
@@ -110,21 +111,21 @@ button.home::before {
     font-weight: 900;
     content: "\f6a7";
     padding-right: 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 button.index::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f100";
     padding-right: 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 button.about::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f2bb";
     padding-right: 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 
 button.about {
@@ -136,7 +137,7 @@ button.contact::before {
     font-weight: 900;
     content: "\f653";
     padding-right: 5px;
-    font-size: 20px;
+    font-size: 40px;
 }
 .tooltip {
     position: relative;

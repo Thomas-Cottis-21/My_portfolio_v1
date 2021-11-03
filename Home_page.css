@@ -34,6 +34,7 @@ body {
     flex-direction: column;
     text-align: center;
     font-family: spartan;
+    font-size: 14px;
     border-style: solid;
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
@@ -61,7 +62,6 @@ button {
     height: 10vh;
     color: gray;
     font-family: "abel";
-    font-size: 40px;
     border-style: solid;
     border-left: transparent;
     border-top: transparent;
@@ -81,7 +81,7 @@ button.home::before {
     font-weight: 900;
     content: "\f6a7";
     padding-right: 5px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 button.home {
@@ -94,7 +94,7 @@ button.index::before {
     font-weight: 900;
     content: "\f100";
     padding-right: 5px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 button.about::before {
@@ -102,7 +102,7 @@ button.about::before {
     font-weight: 900;
     content: "\f2bb";
     padding-right: 5px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 button.contact::before {
@@ -110,7 +110,7 @@ button.contact::before {
     font-weight: 900;
     content: "\f653";
     padding-right: 5px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 @media screen and (max-width: 768px){
@@ -152,6 +152,11 @@ button.contact::before {
         font-size: 20px;
     }
 }
+@media screen and (max-width: 500px) {
+    button {
+        font-size: 10px;
+    }
+}
 
 @media screen and (min-width: 768px) {
     button {
@@ -161,8 +166,12 @@ button.contact::before {
 
 @media screen and (min-width: 1024px) {
     button {
-        font-size: 40px;
+        font-size: 30px;
     }
+}
+
+@media screen and (min-width: 1253) {
+    
 }
 
 @media screen and (min-width: 1440px) {

@@ -276,6 +276,17 @@ img:hover {
     }
 }
 
+@media screen and (min-width: 1253px) {
+    .title {
+        margin-top: 10px;
+    }
+    h1 {
+        white-space: nowrap;
+        margin-top: 0px;
+        font-size: 110px;
+    }
+}
+
 @media screen and (min-width: 1440px){
     body {
         overflow: hidden;
