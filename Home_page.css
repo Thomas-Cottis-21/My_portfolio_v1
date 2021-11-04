@@ -47,12 +47,6 @@ nav {
     display: flex;
     flex-direction: row;
 }
-
-a {
-    display: flex;
-    text-decoration: none;
-}
-
 button {
     display: flex;
     align-items: center;
@@ -62,6 +56,7 @@ button {
     height: 10vh;
     color: gray;
     font-family: "abel";
+    font-size: 40px;
     border-style: solid;
     border-left: transparent;
     border-top: transparent;
@@ -70,10 +65,14 @@ button {
     border-color: orange;
     transition: .2s;
 }
-
 button:hover {
-    color: orangered;
     border-color: orangered;
+    color: orangered;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
 }
 
 button.home::before {
@@ -83,12 +82,6 @@ button.home::before {
     padding-right: 5px;
     font-size: 40px;
 }
-
-button.home {
-    border-color: orangered;
-    color: orangered
-}
-
 button.index::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -96,7 +89,6 @@ button.index::before {
     padding-right: 5px;
     font-size: 40px;
 }
-
 button.about::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -105,6 +97,10 @@ button.about::before {
     font-size: 40px;
 }
 
+button.home {
+    color: orangered;
+    border-color: orangered;
+}
 button.contact::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -113,20 +109,48 @@ button.contact::before {
     font-size: 40px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 500px) {
+    .heading_top {
+        height: 20vh;
+    }
+    button {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 50px;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 35% 35% 35%;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    }
+
+@media screen and (max-width: 768px) {
     body {
         background-image: url("Images/hexagon_gray_up.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
+}
+
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 30% 30% 30%;
     }
 
-    .heading_top {
-        height: 10vh;
-    }
-
-    .heading_main {
-        height: auto;
+    .character {
+        height: 95vh;
     }
 
     button {
@@ -152,31 +176,36 @@ button.contact::before {
         font-size: 20px;
     }
 }
-@media screen and (max-width: 500px) {
-    button {
-        font-size: 10px;
-    }
-}
 
 @media screen and (min-width: 768px) {
+    
+
     button {
         font-size: 30px;
-    }
+}
 }
 
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
 @media screen and (min-width: 1024px) {
     button {
         font-size: 30px;
-    }
+}
 }
 
 @media screen and (min-width: 1253) {
-    
+
 }
 
 @media screen and (min-width: 1440px) {
     button {
         font-size: 40px;
-    }
+}
 }
 

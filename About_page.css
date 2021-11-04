@@ -3,6 +3,7 @@ body {
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    overflow: scroll;
 }
 
 .heading_top {
@@ -14,7 +15,8 @@ body {
     background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
     height: 15vh;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
@@ -25,32 +27,18 @@ i {
     padding-bottom: 10px;
     font-size: 100px;
 }
-.character {
-    width: 95vw;
-    height: 60vh;
-    border-style: solid;
-    border-color: rgb(253, 178, 39);
-    border-radius: 10px;
-    background-color: rgba(241, 241, 240, 0.6);
-    margin-top: auto;
-    margin-right: auto;
-    margin-left: auto;
-} 
+
 .grid {
     display: grid;
+    width: 90vw;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50% 50%;
     grid-row-gap: 10px;
     grid-column-gap: 10px;
     justify-content: center;
-    padding-top: 1.3vh;
-    margin-right: 10px;
-    margin-left: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
+    margin: auto;
 }
 .grid > div {
-    
     overflow: hidden;
     color: black;
     background-color: transparent;
@@ -200,4 +188,104 @@ th {
     font-size: 20px;
     font-family: abel;
     padding: 20px;
-}  
+} 
+
+@media screen and (max-width: 500px) {
+    .heading_top {
+        height: 20vh;
+    }
+    button {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    i {
+        font-size: 50px;
+    }
+
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 35% 35% 35%;
+    }
+
+    table {
+        font-size: 10px;
+    }
+
+    }
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+}
+
+    .grid {
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 30% 30% 30%;
+    }
+
+    .character {
+        height: 95vh;
+    }
+
+    button {
+        font-size: 20px;
+        flex-direction: column;
+        height: auto;
+        width: 20vw;
+    }
+
+    button.home::before {
+        font-size: 20px;
+    }
+
+    button.index::before {
+        font-size: 20px;
+    }
+
+    button.about::before {
+        font-size: 20px;
+    }
+
+    button.contact::before {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    button {
+        font-size: 30px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 1024px) {
+    button {
+        font-size: 30px;
+}
+}
+
+@media screen and (min-width: 1253) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    button {
+        font-size: 40px;
+}
+}
