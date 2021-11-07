@@ -7,6 +7,12 @@ body {
     overflow: scroll;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .heading_top {
     display: flex;
     align-items: center;
@@ -16,8 +22,6 @@ body {
     background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
     height: 15vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
@@ -26,7 +30,6 @@ nav {
     display: flex;
     flex-direction: row;
 }
-
 button {
     display: flex;
     align-items: center;
@@ -45,7 +48,6 @@ button {
     border-color: orange;
     transition: .2s;
 }
-
 button:hover {
     border-color: orangered;
     color: orangered;
@@ -63,7 +65,6 @@ button.home::before {
     padding-right: 5px;
     font-size: 40px;
 }
-
 button.index::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -71,7 +72,6 @@ button.index::before {
     padding-right: 5px;
     font-size: 40px;
 }
-
 button.about::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -84,7 +84,6 @@ button.contact {
     color: orangered;
     border-color: orangered;
 }
-
 button.contact::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -96,21 +95,14 @@ button.contact::before {
 /*Until here from the body styling copy and pasted from about.css for consistency*/
 
 /*Form styling*/
-
-.container {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 h1 {
     font-family: abel;
-    color: gray;
+    color: orange;
     font-size: 50px;
     text-align: center;
 }
 
-form{
+form {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -144,14 +136,13 @@ p {
 }
 
 /*Media queries copied from the about.css page*/
+
 @media screen and (max-width: 500px) {
     .heading_top {
         height: 20vh;
     }
-    button {
-        font-size: 10px;
+
     }
-}
 
 @media screen and (max-width: 768px) {
     body {
@@ -186,8 +177,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-    
-
     button {
         font-size: 30px;
 }

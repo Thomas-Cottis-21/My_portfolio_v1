@@ -1,9 +1,16 @@
+/*all body, container and headings should be identicle across css*/
 body {
     background-image: url("Images/hexagon_gray.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: scroll;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .heading_top {
@@ -15,8 +22,6 @@ body {
     background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
     height: 15vh;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
@@ -263,8 +268,6 @@ th {
 }
 
 @media screen and (min-width: 768px) {
-    
-
     button {
         font-size: 30px;
 }
