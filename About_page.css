@@ -20,9 +20,9 @@ body {
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
-
+/* Grid, icons and grid lables styling*/
 i {
-    color: rgb(253, 178, 39);
+    color: orange;
     padding-top: 15px;
     padding-bottom: 10px;
     font-size: 100px;
@@ -43,7 +43,7 @@ i {
     color: black;
     background-color: transparent;
     border-style: solid;
-    border-color: gray;
+    border-color: rgba(179, 177, 174, 0.6);
     border-radius: 10px;
     text-align: center;
     font-size: 30px;
@@ -53,15 +53,50 @@ i {
 .grid > div:hover {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgba(56, 55, 53, 0.6); 
+    background-color: rgba(179, 177, 174, 0.6);
+    border-color: transparent; 
 }
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: inherit;
+    height: inherit;
+    background-color: transparent;
+    color: transparent;
+    text-align: center;
+    font-family: spartan;
+    font-size: 16px;
+    padding: 5px 0;
+    border-radius: 10px;
+    position: absolute;
+    z-index: 1;
+    top: 0px;
+    left: 0%;
+    transition: ease-in .3s;
+}
+.tooltip:hover .tooltiptext {
+    visibility: inherit;
+    background-color: orange;
+    color: whitesmoke;
+    
+}
+.tooltiptext {
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: spartan; 
+}
+
 h3 {
     font-family: abel;
     color: black;
     font-size: 40px;
     padding-top: none;
 }
-
+/* Navigation bar, buttons and smaller icons styling*/
 nav {
     display: flex;
     flex-direction: row;
@@ -127,38 +162,7 @@ button.contact::before {
     padding-right: 5px;
     font-size: 40px;
 }
-.tooltip {
-    position: relative;
-    display: inline-block;
-}
-.tooltip .tooltiptext {
-    visibility: hidden;
-    width: inherit;
-    height: inherit;
-    background-color: transparent;
-    color: transparent;
-    text-align: center;
-    font-family: spartan;
-    font-size: 16px;
-    padding: 5px 0;
-    border-radius: 10px;
-    position: absolute;
-    z-index: 1;
-    top: 0px;
-    left: 0%;
-    transition: ease-in .3s;
-}
-.tooltip:hover .tooltiptext {
-    visibility: inherit;
-    background-color: rgba(255, 166, 0, 0.6);
-    color: black;
-    
-}
-.tooltiptext {
-    overflow-x: hidden;
-    overflow-y: auto;
-    font-family: spartan; 
-}
+/* Table styling*/
 caption {
     font-family: abel;
     color: black;
@@ -189,7 +193,7 @@ th {
     font-family: abel;
     padding: 20px;
 } 
-
+/* media queries*/
 @media screen and (max-width: 500px) {
     .heading_top {
         height: 20vh;

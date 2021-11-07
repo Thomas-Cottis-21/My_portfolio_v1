@@ -10,7 +10,7 @@ body {
     width: 100vw;
     height: 100vh;
 }
-
+/* title and intro sentences styling*/
 .title {
     position: relative;
     word-wrap: break-word;
@@ -33,7 +33,7 @@ h3 {
     color: gray;
     margin-top: 0px;
 }
-
+/* button and image styling*/
 .flexbox-button {
     display: flex;
     flex-direction: row;
@@ -79,7 +79,7 @@ img:hover {
     transform: scale(1.05);
     filter: drop-shadow(8px 8px 10px gray);
 }
-
+/* media queries*/
 @media screen and (max-width: 768px){
     body {
         overflow: scroll;

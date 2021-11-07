@@ -1,5 +1,218 @@
+/*Copy and pasted from the about.css page for the navigation bar and background*/
+body {
+    background-image: url("Images/hexagon_gray.png");
+    background-size: contain;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    overflow: scroll;
+}
+
+.heading_top {
+    display: flex;
+    align-items: center;
+    border-style: solid;
+    border-color: orange;
+    border-radius: 10px;
+    background-color: rgba(241, 241, 240, 0.6);
+    width: 95vw;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+    height: 10vh;
+    color: gray;
+    font-family: "abel";
+    font-size: 40px;
+    border-style: solid;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    border-color: orange;
+    transition: .2s;
+}
+
+button:hover {
+    border-color: orangered;
+    color: orangered;
+}
+
+a {
+    display: flex;
+    text-decoration: none;
+}
+
+button.home::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f6a7";
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+button.index::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f100";
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+button.about::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f2bb";
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+button.contact {
+    color: orangered;
+    border-color: orangered;
+}
+
+button.contact::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f653";
+    padding-right: 5px;
+    font-size: 40px;
+}
+
+/*Until here from the body styling copy and pasted from about.css for consistency*/
+
+/*Form styling*/
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-family: abel;
+    color: gray;
+    font-size: 50px;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border: solid;
+    border-color: orange;
+    border-radius: 10px;
+    background-color: rgba(241, 241, 240, 0.6);
+}
 
 label {
-    color: red;
-    font: Helvetica;
+    font-family: spartan;
+    font-size: 20px;
+    padding: 5px;
+}
+
+p {
+    font-family: spartan;
+    font-size: 20px;
+    border: solid;
+    border-color: orange;
+    border-left: transparent;
+    border-right: transparent;
+    border-top: transparent;
+}
+
+.label-side {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+/*Media queries copied from the about.css page*/
+@media screen and (max-width: 500px) {
+    .heading_top {
+        height: 20vh;
+    }
+    button {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: contain;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+}
+
+    button {
+        font-size: 20px;
+        flex-direction: column;
+        height: auto;
+        width: 20vw;
+    }
+
+    button.home::before {
+        font-size: 20px;
+    }
+
+    button.index::before {
+        font-size: 20px;
+    }
+
+    button.about::before {
+        font-size: 20px;
+    }
+
+    button.contact::before {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    
+
+    button {
+        font-size: 30px;
+}
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-image: url("Images/hexagon_gray_up.png");
+        background-size: cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+    }
+}
+@media screen and (min-width: 1024px) {
+    button {
+        font-size: 30px;
+}
+}
+
+@media screen and (min-width: 1253) {
+
+}
+
+@media screen and (min-width: 1440px) {
+    button {
+        font-size: 40px;
+}
 }
