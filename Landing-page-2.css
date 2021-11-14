@@ -77,8 +77,19 @@ img {
 
 img:hover {
     transform: scale(1.05);
-    filter: drop-shadow(8px 8px 10px gray);
+    filter: drop-shadow(8px 8px 10px black);
 }
+
+h4 {
+    display: flex;
+    text-align: left;
+    font-family: abel;
+    font-size: 40px;
+    color: gray;
+    margin-top: 50px;
+    margin-left: 15px;
+}
+
 /* media queries*/
 @media screen and (max-width: 768px){
     body {
@@ -111,6 +122,10 @@ img:hover {
 
     h3 {
         font-size: 40px;
+    }
+
+    h4 {
+        text-align: center;
     }
     
     .flexbox-button {
@@ -177,6 +192,10 @@ img:hover {
     h3 {
         font-size: 70px;
         width: auto;
+    }
+
+    h4 {
+        text-align: center;
     }
     
     .flexbox-button {
@@ -249,6 +268,10 @@ img:hover {
         margin-top: 0px;
         margin-left: 10px;
         margin-bottom: 0px;
+    }
+
+    h4 {
+        text-align: left;
     }
     
     .flexbox-button {
@@ -324,6 +347,10 @@ img:hover {
         margin-top: 0px;
         margin-left: 10px;
         margin-bottom: 100px;
+    }
+
+    h4 {
+        text-align: left;
     }
     
     .flexbox-button {
