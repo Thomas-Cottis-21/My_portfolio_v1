@@ -4,6 +4,11 @@ body {
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: scroll;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: rgb(41, 41, 41);
 }
 
 .container {
@@ -46,7 +51,7 @@ body {
 nav {
     display: flex;
     flex-direction: row;
-}
+    }
 
 button {
     display: flex;
@@ -64,18 +69,18 @@ button {
     border-right: transparent;
     background-color: transparent;
     border-color: orange;
-    transition: .2s;
+    transition: 0.2s;
 }
 
 button:hover {
     border-color: orangered;
     color: orangered;
-}
+    }
 
 a {
     display: flex;
     text-decoration: none;
-}
+    }
 
 p {
     text-align: center;
@@ -137,7 +142,7 @@ button.contact::before {
     .heading_main {
         font-size: 16px;
     }
-    }
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -179,13 +184,13 @@ button.contact::before {
     }
 }
 
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
     button {
         font-size: 30px;
-}
+    }
 }
 
-@media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1024px) {
     body {
         background-image: url("Images/hexagon_gray_up.png");
         background-size: cover;
@@ -193,19 +198,17 @@ button.contact::before {
         background-repeat: no-repeat;
     }
 }
-@media screen and (min-width: 1024px) {
+    @media screen and (min-width: 1024px) {
     button {
         font-size: 30px;
-}
-}
-
-@media screen and (min-width: 1253) {
-
+    }
 }
 
-@media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1253) {
+}
+
+    @media screen and (min-width: 1440px) {
     button {
         font-size: 40px;
+    }
 }
-}
-

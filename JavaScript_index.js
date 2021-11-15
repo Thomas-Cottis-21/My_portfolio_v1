@@ -8,3 +8,7 @@ function popUp(){
     }
     document.getElementById("newPage").innerHTML = text;
 }
+function darkMode() {
+    var element = document.body;
+    element.classList.toggle("dark-mode");
+}

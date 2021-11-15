@@ -1,6 +1,26 @@
 body {
     overflow: hidden;
     margin: 0;
+    background-color: white;
+}
+
+.dark-mode {
+    background-color: rgb(41, 41, 41);
+}
+
+button.btn {
+    border: none;
+    background: transparent;
+    position: fixed;
+    left: 50%;
+    bottom: 5%;
+    font-size: 90px;
+    color: gray;
+    transition-duration: .5s;
+}
+
+button.btn:hover {
+    color: orangered;
 }
 
 .container {
@@ -37,11 +57,11 @@ h3 {
 .flexbox-button {
     display: flex;
     flex-direction: row;
+}    
 
-}
 
-button {
-    background-color: rgba(241, 241, 240, 0.6);
+button.menu {
+    background-color: transparent;
     border-style: solid;
     border-top: transparent;
     border-right: transparent;
@@ -135,7 +155,7 @@ h4 {
         align-items: center;
         margin: auto;
     }
-    button {
+    button.menu {
         width: 75vw;
         height: auto;
         padding: 5px;
@@ -205,7 +225,7 @@ h4 {
         align-items: center;
         margin: auto;
     }
-    button {
+    button.menu {
         width: 50vw;
         height: auto;
         padding: 5px;
@@ -283,7 +303,7 @@ h4 {
 
     }
 
-    button {
+    button.menu {
         width: 300px;
         height: auto;
         font-size: 30px;
@@ -362,7 +382,7 @@ h4 {
 
     }
 
-    button {
+    button.menu {
         width: 200px;
         height: 100px;
         font-size: 30px;
