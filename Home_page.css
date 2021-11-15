@@ -77,6 +77,19 @@ a {
     text-decoration: none;
 }
 
+p {
+    text-align: center;
+}
+
+.click_me {
+    color: orangered;
+    display: inline;
+}
+
+.click_me:hover {
+    color: orange;
+}
+
 button.home::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -120,6 +133,10 @@ button.contact::before {
     .heading_top {
         height: 20vh;
     }
+
+    .heading_main {
+        font-size: 16px;
+    }
     }
 
 @media screen and (max-width: 768px) {
@@ -128,7 +145,11 @@ button.contact::before {
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
-}
+    }
+
+    .heading_main {
+        font-size: 16px;
+    }
 
     .character {
         height: 95vh;
