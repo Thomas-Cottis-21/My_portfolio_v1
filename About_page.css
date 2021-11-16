@@ -7,6 +7,25 @@ body {
     overflow: scroll;
 }
 
+button.btn {
+    border: transparent;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 5%;
+    font-size: 90px;
+    color: gray;
+    transition-duration: .5s;
+}
+
+button.btn:hover {
+    color: orangered;
+}
+
+.dark-mode {
+    background-color: rgb(41, 41, 41);
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -26,7 +45,8 @@ body {
     justify-content: space-evenly;
 }
 /* Grid, icons and grid lables styling*/
-i {
+
+i { /* This also affects the moon dark mode button*/
     color: orange;
     padding-top: 15px;
     padding-bottom: 10px;

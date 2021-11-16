@@ -12,7 +12,7 @@ button.btn {
     border: none;
     background: transparent;
     position: fixed;
-    left: 50%;
+    left: 0;
     bottom: 5%;
     font-size: 90px;
     color: gray;
