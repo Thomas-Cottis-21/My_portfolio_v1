@@ -13,7 +13,7 @@ body {
     flex-direction: column;
 }
 
-.dark-mode {
+.switch-theme {
     background-color: rgb(41, 41, 41);
 }
 

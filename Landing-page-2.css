@@ -13,7 +13,7 @@ button.btn {
     background: transparent;
     position: fixed;
     left: 0;
-    bottom: 5%;
+    bottom: 0;
     font-size: 90px;
     color: gray;
     transition-duration: .5s;
@@ -146,6 +146,7 @@ h4 {
 
     h4 {
         text-align: center;
+        font-size: 30px;
     }
     
     .flexbox-button {
@@ -216,6 +217,7 @@ h4 {
 
     h4 {
         text-align: center;
+        font-size: 60px;
     }
     
     .flexbox-button {
@@ -292,6 +294,7 @@ h4 {
 
     h4 {
         text-align: left;
+        font-size: 30px;
     }
     
     .flexbox-button {
@@ -327,6 +330,9 @@ h4 {
         white-space: nowrap;
         margin-top: 0px;
         font-size: 110px;
+    }
+    h4 {
+        font-size: 30px;
     }
 }
 
@@ -371,6 +377,7 @@ h4 {
 
     h4 {
         text-align: left;
+        font-size: 50px;
     }
     
     .flexbox-button {
