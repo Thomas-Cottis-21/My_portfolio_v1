@@ -2,13 +2,16 @@ function popUp(){
     let text;
     let person = prompt("Please enter your name:", "Buzz Lightyear");
     if (person == null || person == "") {
-        text = "User cancelled the prompt";
+        text = "Thank you for your visit!";
     } else {
         text = "Hello " + person + "! Thank you for your input and please contact me soon!";
     }
     document.getElementById("newPage").innerHTML = text;
 }
-function darkMode() {
+
+function switchTheme() {
     var element = document.body;
-    element.classList.toggle("dark-mode");
+    element.classList.toggle("switch-theme");
 }
+
+

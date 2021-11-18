@@ -7,29 +7,14 @@ body {
     background-color: white;
 }
 
-.dark-mode {
-    background-color: rgb(41, 41, 41);
-}
-
-button.btn {
-    border: none;
-    background: transparent;
-    position: fixed;
-    left: 0;
-    bottom: 5%;
-    font-size: 90px;
-    color: gray;
-    transition-duration: .5s;
-}
-
-button.btn:hover {
-    color: orangered;
-}
-
 .container {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.dark-mode {
+    background-color: rgb(41, 41, 41);
 }
 
 .heading_top {
