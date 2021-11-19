@@ -4,7 +4,7 @@ function popUp(){
     if (person == null || person == "") {
         text = "Thank you for your visit!";
     } else {
-        text = "Hello " + person + "! Thank you for your input and please contact me soon!";
+        text = "Hello " + person + "! Thank you for checking out my portfolio!";
     }
     document.getElementById("newPage").innerHTML = text;
 }
