@@ -190,7 +190,7 @@ button.contact::before {
     }
 }
 
-    @media screen and (max-width: 1024px) {
+    @media screen and (max-width: 1100px) {
     body {
         background-image: url("Images/hexagon_gray_up.png");
         background-size: cover;

@@ -1,10 +1,28 @@
 function popUp(){
     let text;
+    const d = new Date();
+    //Brings in the current date
+    d.getHours();
+    //returns just the hours (8, 10, 17, 24 etc...).
+    let h_morning = 12;
+    let h_afternoon = 17;
+    let h_evening = 24;
+    //variables of time to be tested against.
     let person = prompt("Please enter your name:", "Buzz Lightyear");
     if (person == null || person == "") {
         text = "Thank you for your visit!";
-    } else {
-        text = "Hello " + person + "! Thank you for checking out my portfolio!";
+
+    }else if(h_morning > d.getHours && h_morning < h_afternoon){
+        //if 12 is greater than current time AND less than 17.
+        text = `Good morning, ${person}! Thank you for taking time out of your morning.`;
+
+    }else if(h_afternoon > d.getHours && h_afternoon > h_morning){
+        //if 17 is greater than current time AND greater than 12.
+        text = "Good afternoon, " + person + "! Thank you for taking time out of your day.";
+
+    }else if(h_evening > d.getHours()){
+        //if 24 is greater than current time.
+        text = "Good evening, " + person + "! Thank you for taking time out of your night."
     }
     document.getElementById("newPage").innerHTML = text;
 }
