@@ -4,21 +4,6 @@ body {
     background-color: white;
 }
 
-.switch-theme {
-    background-color: rgb(41, 41, 41);
-}
-
-button.btn {
-    border: none;
-    background: transparent;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    font-size: 90px;
-    color: gray;
-    transition-duration: .5s;
-}
-
 button.btn:hover {
     color: orangered;
 }
@@ -30,7 +15,40 @@ button.btn:hover {
     width: 100vw;
     height: 100vh;
 }
+
+.pics {
+    display: flex;
+    justify-content: right;
+}
+
+img {
+    width: auto;
+    height: 100vh;
+    width: auto;
+    justify-content: right;
+    transition-duration: .5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: drop-shadow(8px 8px 10px black);
+}
+
 /* title and intro sentences styling*/
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+        }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 .title {
     position: relative;
     word-wrap: break-word;
@@ -44,6 +62,8 @@ h1 {
     font-size: 120px;
     color: orange;
     margin-bottom: 0px;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 h3 {
@@ -52,11 +72,15 @@ h3 {
     font-size: 60px;
     color: gray;
     margin-top: 0px;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 /* button and image styling*/
 .flexbox-button {
     display: flex;
     flex-direction: row;
+    animation-name: fade;
+    animation-duration: 3s;
 }    
 
 
@@ -82,23 +106,6 @@ button:hover {
     color: orangered;
 }
 
-.pics {
-    display: flex;
-    justify-content: right;
-}
-
-img {
-    width: auto;
-    height: 100vh;
-    width: auto;
-    justify-content: right;
-    transition-duration: .5s;
-}
-
-img:hover {
-    transform: scale(1.05);
-    filter: drop-shadow(8px 8px 10px black);
-}
 
 h4 {
     display: flex;
@@ -108,7 +115,27 @@ h4 {
     color: gray;
     margin-top: 50px;
     margin-left: 15px;
+    animation-name: fade;
+    animation-duration: 4s;
 }
+
+.switch-theme {
+    background-color: rgb(41, 41, 41);
+}
+
+button.btn {
+    border: none;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 90px;
+    color: gray;
+    transition-duration: .5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
+
 
 /* media queries*/
 @media screen and (max-width: 768px){

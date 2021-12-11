@@ -8,7 +8,7 @@ function popUp(){
     let h_afternoon = 17;
     let h_evening = 23;
     //variables of time to be tested against.
-    let person = prompt("Please enter your name:", "Buzz Lightyear");
+    let person = prompt("Please enter your name: (trust me, it'll be cool)", "Buzz Lightyear");
     if (person == null || person == "") {
         text = "Thank you for your visit!";
 
