@@ -1,6 +1,6 @@
 /*Copy and pasted from the about.css page for the navigation bar and background*/
 body {
-    background-image: url("Images/hexagon_gray.png");
+    background-image: url("Images/hexagon_flipped.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -14,6 +14,18 @@ body {
     margin-bottom: 50px;
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+    to{
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
+
 .heading_top {
     display: flex;
     align-items: center;
@@ -25,6 +37,8 @@ body {
     height: 15vh;
     margin-bottom: 10px;
     justify-content: space-evenly;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 nav {
@@ -101,6 +115,8 @@ h1 {
     color: orange;
     font-size: 50px;
     text-align: center;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
 form {
@@ -112,6 +128,8 @@ form {
     border-color: orange;
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
+    animation-name: fade;
+    animation-duration: 2.5s;
 }
 
 label {
@@ -145,6 +163,8 @@ table, th, td {
 table {
     border-collapse: collapse;
     margin: auto;
+    animation-name: fade;
+    animation-duration: 3s;
 }
 td {
     text-align: center;
@@ -172,7 +192,7 @@ td, th {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -210,7 +230,7 @@ td, th {
 
 @media screen and (max-width: 1100px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;

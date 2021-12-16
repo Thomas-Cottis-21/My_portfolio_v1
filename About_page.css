@@ -1,6 +1,6 @@
 /*all body, container and headings should be identicle across css*/
 body {
-    background-image: url("Images/hexagon_gray.png");
+    background-image: url("Images/hexagon_flipped.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -11,6 +11,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+    to {
+        opacity: 1;
+        transform:translate3d(0,0,0);
+    }
 }
 
 .heading_top {
@@ -24,6 +35,8 @@ body {
     height: 15vh;
     margin-bottom: 10px;
     justify-content: space-evenly;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 /* Grid, icons and grid lables styling*/
 
@@ -32,8 +45,17 @@ i { /* This also affects the moon dark mode button*/
     padding-top: 15px;
     padding-bottom: 10px;
     font-size: 100px;
+    animation-name: fade;
+    animation-duration: 2.5s;
 }
-
+.grid-header {
+    display: flex;
+    justify-content: center;
+    font-family: abel;
+    font-size: 50px;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
 .grid {
     display: grid;
     width: 90vw;
@@ -43,6 +65,8 @@ i { /* This also affects the moon dark mode button*/
     grid-column-gap: 10px;
     justify-content: center;
     margin: auto;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 .grid > div {
     overflow: hidden;
@@ -101,6 +125,8 @@ h3 {
     color: black;
     font-size: 40px;
     padding-top: none;
+    animation-name: fade;
+    animation-duration: 2.5s;
 }
 /* Navigation bar, buttons and smaller icons styling*/
 nav {
@@ -174,6 +200,8 @@ caption {
     color: black;
     font-size: 50px;
     padding: 30px;
+    animation-name: fade;
+    animation-duration: 3s;
 }
 table, th, td {
     color: black;
@@ -188,6 +216,8 @@ table {
     margin-left: auto;
     background-color: rgba(241, 241, 240, 0.6);
     text-align: center;
+    animation-name: fade;
+    animation-duration: 4s;
 }
 td {
     text-align: center;
@@ -199,6 +229,14 @@ th {
     font-family: abel;
     padding: 20px;
 } 
+.jobs{
+    display: flex;
+    justify-content: center;
+    font-family: abel;
+    font-size: 50px;
+    animation-name: fade;
+    animation-duration: 4.5s;
+}
 /* media queries*/
 @media screen and (max-width: 500px) {
     .heading_top {
@@ -229,7 +267,7 @@ th {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -276,7 +314,7 @@ th {
 
 @media screen and (max-width: 1100px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;

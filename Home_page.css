@@ -1,5 +1,5 @@
 body {
-    background-image: url("Images/hexagon_gray.png");
+    background-image: url("Images/hexagon_flipped.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -17,6 +17,17 @@ body {
     background-color: rgb(41, 41, 41);
 }
 
+@keyframes fade {
+    from {
+        opacity: 0;
+        transform: translate3d(0,40px,0);
+    }
+    to {
+        opacity: 1;
+        transform: translate3d(0,0,0);
+    }
+}
+
 .heading_top {
     display: flex;
     align-items: center;
@@ -29,24 +40,26 @@ body {
     margin: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
+    animation-name: fade;
+    animation-duration: 1s;
 }
 
 .heading_main {
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    text-align: center;
     font-family: spartan;
-    font-size: 24px;
+    font-size: 16px;
     border-style: solid;
     border-radius: 10px;
     background-color: rgba(241, 241, 240, 0.6);
     border-color: orange;
     width: 95vw;
-    height: 50vh;
+    height: auto;
+    animation-name: fade;
+    animation-duration: 2s;
 }
 
-/* navigation bar, buttons and small icons styling*/
+/* navigation bar, paragraph, buttons and small icons styling*/
 
 nav {
     display: flex;
@@ -75,6 +88,7 @@ button {
 button:hover {
     border-color: orangered;
     color: orangered;
+    cursor: pointer;
     }
 
 a {
@@ -83,7 +97,7 @@ a {
     }
 
 p {
-    text-align: center;
+    text-align: left;
 }
 
 .click_me {
@@ -146,7 +160,7 @@ button.contact::before {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -192,7 +206,7 @@ button.contact::before {
 
     @media screen and (max-width: 1100px) {
     body {
-        background-image: url("Images/hexagon_gray_up.png");
+        background-image: url("Images/hexagon_flipped.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;

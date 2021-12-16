@@ -104,6 +104,7 @@ button.menu {
 button:hover {
     border-color: orangered;
     color: orangered;
+    cursor: pointer;
 }
 
 
