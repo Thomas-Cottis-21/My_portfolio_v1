@@ -229,13 +229,48 @@ th {
     font-family: abel;
     padding: 20px;
 } 
+.mainprojects {
+    display: flex;
+    flex-direction: column;
+}
 .jobs{
     display: flex;
     justify-content: center;
     font-family: abel;
     font-size: 50px;
+    align-items: center;
     animation-name: fade;
     animation-duration: 4.5s;
+}
+.jobs::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f077";
+    font-size: 34px;
+    padding-left: 20px;
+}
+.jobs:hover {
+    cursor: pointer;
+}
+hr {
+    border: solid;
+    color: orange;
+    border-width: 1px;
+    width: 75%;
+}
+.headprojects {
+    display: flex;
+    justify-content: center;
+    font-family: abel;
+    font-size: 30px; 
+}
+.paraprojects {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    font-family: spartan;
+    font-size: 16px;
+    width: 75vw;
 }
 /* media queries*/
 @media screen and (max-width: 500px) {

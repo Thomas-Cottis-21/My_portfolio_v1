@@ -109,13 +109,36 @@
             </table>
         
 
-            <div>
+            <div class="mainprojects">
                 <h2 id="projects" class="jobs">Projects</h2>
-                <h4 id="iframe">I hope that this works!</h4>
+                <h4 id="iframe" class="headprojects">Project Polygraph</h4>
+                <hr>
+                <p id="iframedesc" class="paraprojects">My grandfather, Joseph Cottis is highly trained in lie detecting thanks to the F.B.I. He worked there for nearly 30 years!
+                    Since he's retired from the Bureau, he has retained much of his training in the art of detecting lies and helping regular people free themselves from 
+                    the lies of others, sadly, loved ones. He had reached out previosuly to a company to help him get out there to start helping people around Utah by creating a web site. 
+                    The web site had served him well, but I knew that I could do much better than them and felt obligated to help him. Eager for any experience that I could get in web development 
+                    I took to the task of building my Grandfather a new, trustworthy, aesthetic and modern web presence.
+                </p>
+                <h4 id="iframe1" class="headprojects">Codecademy</h4>
+                <hr>
+                <p id="iframedesc1" class="paraprojects">I am currently in the Salt Lake Community College Web Developer program and I love it! I have finally found my passion and dorrway into my future, but I 
+                    wanted more. The class was good, but I was better. It was then that I found codecademy. I first took their free javascript course that got me hooked! From then on I kept 
+                    taking more courses and even purchased the pro subscription to keep feeding my wanting to learn brain. The following are my achievements there.
+                </p>
+                <h4 id="iframe2" class="headprojects">My Portfolio</h4>
+                <hr>
+                <p id="iframedesc2" class="paraprojects">This is my portfolio, one place where all of my relevant achievments can be stored for people to see! My portfolio was built using straight HTML, CSS and JavaScript.
+                    No template or external wordpress was used. I made it like this partly so I could experiment with my capabilities, but also to display what I can do on my own. I am proud of it, but I can keep going.
+                </p>
             </div>
             <script>
                 $("#projects").click(function() {
-                    $("#iframe").fadeToggle()
+                    $("#iframe").slideToggle(200)
+                    $("#iframedesc").slideToggle(250)
+                    $("#iframe1").slideToggle(300)
+                    $("#iframedesc1").slideToggle(350)
+                    $("#iframe2").slideToggle(400)
+                    $("#iframedesc2").slideToggle(450)
                 })
             </script>
     </body>
