@@ -27,7 +27,4 @@ function popUp(){
     document.getElementById("newPage").innerHTML = text;
 }
 
-function switchTheme() {
-    var element = document.body;
-    element.classList.toggle("switch-theme");
-}
+

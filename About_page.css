@@ -1,10 +1,14 @@
 /*all body, container and headings should be identicle across css*/
 body {
-    background-image: url("Images/hexagon_flipped.png");
+    background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;
     overflow: scroll;
+}
+
+.switch-theme {
+    background-color: rgb(41, 41, 41);
 }
 
 .container {
@@ -307,7 +311,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("Images/hexagon_flipped.png");
+        background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -354,7 +358,7 @@ hr {
 
 @media screen and (max-width: 1100px) {
     body {
-        background-image: url("Images/hexagon_flipped.png");
+        background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
