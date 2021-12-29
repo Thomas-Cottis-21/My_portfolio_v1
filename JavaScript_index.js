@@ -8,26 +8,32 @@ function popUp(){
     let h_afternoon = 17;
     let h_evening = 23;
     //variables of time to be tested against.
+
+    const createName = () => {
+        let person = prompt("Please enter your name: (trust me, it'll be cool)", "Buzz Lightyear");
+        person = localStorage.setItem("name", person);
+    }
+
     let getNewName = localStorage.getItem("name");
-    person = getNewName;
+    let person = getNewName;
     
     if (getNewName === null) {
-        let person = prompt("Please enter your name: (trust me, it'll be cool)", "Buzz Lightyear");
-        localStorage.setItem("name", person);
-        console.log("it should work");
+        createName();
+        console.log("first if");
     }else{
-        console.log("it doesnt work");
-        let person = getNewName;
+        console.log("else");
+        
     }
+    person = localStorage.getItem("name");
 
     //let person = prompt("Please enter your name: (trust me, it'll be cool)", "Buzz Lightyear");
 
     //newName = localStorage.setItem("name", person);
 
-    /*if (person == null || person == "") {
+    if (person === "null" || person === "") {
         text = "Thank you for your visit!";
 
-    }else */if(h_morning >= d.getHours() && d.getHours() < h_afternoon){
+    }else if(h_morning >= d.getHours() && d.getHours() < h_afternoon){
         //if 12 is greater than current time AND less than 17.
         text = `Good morning, ${person}! Thank you for taking time out of your morning.`;
 
@@ -41,3 +47,4 @@ function popUp(){
     }
     document.getElementById("newPage").innerHTML = text;
 }
+//localStorage.clear();
