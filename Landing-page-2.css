@@ -83,6 +83,9 @@ h3 {
     animation-duration: 3s;
 }    
 
+button {
+    color: gray;
+}
 
 button.menu {
     background-color: transparent;
@@ -93,7 +96,7 @@ button.menu {
     border-color: orange;
     font-family: abel;
     font-size: 30px;
-    color: gray;
+    
     width: 300px;
     height: 100px;
     margin-top: 150px;
@@ -124,6 +127,18 @@ h4 {
     background-color: rgb(41, 41, 41);
 }
 
+.switchH3 {
+    color: #e25822;
+}
+
+.switch-menu-button {
+    color: whitesmoke;
+}
+
+.switch-text {
+    color: whitesmoke;
+}
+
 button.btn {
     border: none;
     background: transparent;
@@ -136,7 +151,22 @@ button.btn {
     animation-name: fade;
     animation-duration: 5s;
 }
+button.btn:hover {
+    color: gray;
+}
 
+.fa-sun {
+    border: none;
+    background: transparent;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    font-size: 90px;
+    color: yellow;
+    transition-duration: .5s;
+    animation-name: fade;
+    animation-duration: 5s;
+}
 
 /* media queries*/
 @media screen and (max-width: 768px){
