@@ -139,7 +139,7 @@ h4 {
     color: whitesmoke;
 }
 
-button.btn {
+.fa-cloud-moon {
     border: none;
     background: transparent;
     position: fixed;
@@ -150,22 +150,10 @@ button.btn {
     transition-duration: .5s;
     animation-name: fade;
     animation-duration: 5s;
-}
-button.btn:hover {
-    color: gray;
 }
 
 .fa-sun {
-    border: none;
-    background: transparent;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    font-size: 90px;
     color: yellow;
-    transition-duration: .5s;
-    animation-name: fade;
-    animation-duration: 5s;
 }
 
 /* media queries*/
