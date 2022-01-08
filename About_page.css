@@ -17,30 +17,14 @@ body {
     align-items: center;
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translate3d(0,40px,0);
-    }
-    to {
-        opacity: 1;
-        transform:translate3d(0,0,0);
-    }
-}
-
 .heading_top {
     display: flex;
     align-items: center;
-    border-style: solid;
-    border-color: orange;
     border-radius: 10px;
-    background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
     height: 15vh;
     margin-bottom: 10px;
     justify-content: space-evenly;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 /* Grid, icons and grid lables styling*/
 
@@ -49,16 +33,12 @@ i { /* This also affects the moon dark mode button*/
     padding-top: 15px;
     padding-bottom: 10px;
     font-size: 100px;
-    animation-name: fade;
-    animation-duration: 2.5s;
 }
 .grid-header {
     display: flex;
     justify-content: center;
     font-family: abel;
     font-size: 50px;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }
 .grid {
     display: grid;
@@ -69,15 +49,13 @@ i { /* This also affects the moon dark mode button*/
     grid-column-gap: 10px;
     justify-content: center;
     margin: auto;
-    animation-name: fade;
-    animation-duration: 2s;
 }
 .grid > div {
     overflow: hidden;
     color: black;
     background-color: transparent;
     border-style: solid;
-    border-color: rgba(179, 177, 174, 0.6);
+    border-color: rgba(192, 197, 206, .6);
     border-radius: 10px;
     text-align: center;
     font-size: 30px;
@@ -87,7 +65,7 @@ i { /* This also affects the moon dark mode button*/
 .grid > div:hover {
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: rgba(179, 177, 174, 0.6);
+    background-color: rgba(192, 197, 206, .6);
     border-color: transparent; 
 }
 
@@ -129,8 +107,6 @@ h3 {
     color: black;
     font-size: 40px;
     padding-top: none;
-    animation-name: fade;
-    animation-duration: 2.5s;
 }
 /* Navigation bar, buttons and smaller icons styling*/
 nav {
@@ -144,7 +120,6 @@ button {
     text-align: center;
     width: 20vw;
     height: 10vh;
-    color: gray;
     font-family: "abel";
     font-size: 40px;
     border-style: solid;
@@ -160,6 +135,10 @@ button:hover {
     color: #e25822;
 }
 
+.index, .home, .about, .contact {
+    color: rgba(192, 197, 206);
+}
+
 a {
     display: flex;
     text-decoration: none;
@@ -168,7 +147,7 @@ a {
 button.home::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f6a7";
+    content: "\f015";
     padding-right: 5px;
     font-size: 40px;
 }
@@ -204,8 +183,6 @@ caption {
     color: black;
     font-size: 50px;
     padding: 30px;
-    animation-name: fade;
-    animation-duration: 3s;
 }
 table, th, td {
     color: black;
@@ -218,10 +195,8 @@ table {
     font-size: 16px;
     margin-right: auto;
     margin-left: auto;
-    background-color: rgba(241, 241, 240, 0.6);
+    background-color: rgba(192, 197, 206, .6);
     text-align: center;
-    animation-name: fade;
-    animation-duration: 4s;
 }
 td {
     text-align: center;
@@ -244,10 +219,8 @@ th {
     font-family: abel;
     font-size: 50px;
     align-items: center;
-    animation-name: fade;
-    animation-duration: 4.5s;
 }
-#chev {
+#expand {
     display: flex;
     font-size: 65px;
     justify-content: center;
@@ -256,7 +229,7 @@ th {
     margin: auto;
     color: orange;
 }
-#chev:hover {
+#expand:hover {
     cursor: pointer;
     color: #e25822;
 }
@@ -264,7 +237,8 @@ hr {
     border: solid;
     color: orange;
     border-width: 1px;
-    width: 75%;
+    width: 60%;
+    margin-bottom: 0;
 }
 .headprojects {
     display: flex;
@@ -276,9 +250,12 @@ hr {
     display: flex;
     justify-content: center;
     margin: auto;
+    padding: 5px;
     font-family: spartan;
     font-size: 16px;
     width: 75vw;
+    border-radius: 10px;
+    background-color: rgba(192, 197, 206, .6);
 }
 
 /* media queries*/

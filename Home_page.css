@@ -138,7 +138,6 @@ button {
     text-align: center;
     width: 20vw;
     height: 10vh;
-    color: rgba(192, 197, 206, .6);
     font-family: "abel";
     font-size: 40px;
     border-style: solid;
@@ -148,6 +147,10 @@ button {
     background-color: transparent;
     border-color: orange;
     transition: 0.2s;
+}
+
+.index, .home, .about, .contact {
+    color: rgba(192, 197, 206);
 }
 
 button:hover {

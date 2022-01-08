@@ -18,31 +18,15 @@ body {
     margin-bottom: 50px;
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translate3d(0,40px,0);
-    }
-    to{
-        opacity: 1;
-        transform: translate3d(0,0,0);
-    }
-}
-
-
 .heading_top {
     display: flex;
     align-items: center;
-    border-style: solid;
-    border-color: orange;
     border-radius: 10px;
-    background-color: rgba(241, 241, 240, 0.6);
     width: 95vw;
     height: 15vh;
+    margin: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 
 nav {
@@ -56,7 +40,7 @@ button {
     text-align: center;
     width: 20vw;
     height: 10vh;
-    color: gray;
+    color: #e25822;
     font-family: "abel";
     font-size: 40px;
     border-style: solid;
@@ -67,9 +51,29 @@ button {
     border-color: orange;
     transition: .2s;
 }
+
 button:hover {
     border-color: #e25822;
     color: #e25822;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+    height: 10vh;
+    color: rgba(192, 197, 206);
+    font-family: "abel";
+    font-size: 40px;
+    border-style: solid;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    border-color: orange;
+    transition: .2s;
 }
 
 a {
@@ -77,10 +81,29 @@ a {
     text-decoration: none;
 }
 
+button.submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20vw;
+    height: 10vh;
+    color: #e25822;
+    font-family: "abel";
+    font-size: 40px;
+    border-style: solid;
+    border-left: transparent;
+    border-top: transparent;
+    border-right: transparent;
+    background-color: transparent;
+    border-color: orange;
+    transition: .2s;
+}
+
 button.home::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    content: "\f6a7";
+    content: "\f015";
     padding-right: 5px;
     font-size: 40px;
 }
@@ -119,8 +142,6 @@ h1 {
     color: orange;
     font-size: 50px;
     text-align: center;
-    animation-name: fade;
-    animation-duration: 2s;
 }
 
 form {
@@ -128,12 +149,8 @@ form {
     align-items: center;
     flex-direction: column;
     padding: 20px;
-    border: solid;
-    border-color: orange;
     border-radius: 10px;
-    background-color: rgba(241, 241, 240, 0.6);
-    animation-name: fade;
-    animation-duration: 2.5s;
+    background-color: rgba(192, 197, 206, .6);
 }
 
 label {
@@ -160,15 +177,13 @@ p {
 
 
 table, th, td {
-    color: black;
+    color: rgba(192, 197, 206);
     padding: 10px;
     width: 75vw;
 }
 table {
     border-collapse: collapse;
     margin: auto;
-    animation-name: fade;
-    animation-duration: 3s;
 }
 td {
     text-align: center;
@@ -202,7 +217,7 @@ td, th {
         background-repeat: no-repeat;
 }
 
-    button {
+    button.submit {
         font-size: 20px;
         flex-direction: column;
         height: auto;
@@ -227,7 +242,7 @@ td, th {
 }
 
 @media screen and (min-width: 768px) {
-    button {
+    button.submit {
         font-size: 30px;
 }
 }
@@ -241,7 +256,7 @@ td, th {
     }
 }
 @media screen and (min-width: 1024px) {
-    button {
+    button.submit {
         font-size: 30px;
 }
 }
@@ -251,7 +266,7 @@ td, th {
 }
 
 @media screen and (min-width: 1440px) {
-    button {
+    button.submit {
         font-size: 40px;
 }
 }
