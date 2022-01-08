@@ -33,24 +33,6 @@ nav {
     display: flex;
     flex-direction: row;
 }
-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    width: 20vw;
-    height: 10vh;
-    color: #e25822;
-    font-family: "abel";
-    font-size: 40px;
-    border-style: solid;
-    border-left: transparent;
-    border-top: transparent;
-    border-right: transparent;
-    background-color: transparent;
-    border-color: orange;
-    transition: .2s;
-}
 
 button:hover {
     border-color: #e25822;
@@ -59,6 +41,7 @@ button:hover {
 
 button {
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -88,7 +71,7 @@ button.submit {
     text-align: center;
     width: 20vw;
     height: 10vh;
-    color: #e25822;
+    color: black;
     font-family: "abel";
     font-size: 40px;
     border-style: solid;
@@ -206,6 +189,12 @@ td, th {
     .heading_top {
         height: 20vh;
     }
+    button {
+        font-size: 10px;
+    }
+    i {
+        font-size: 50px;
+    }
 
     }
 
@@ -218,6 +207,13 @@ td, th {
 }
 
     button.submit {
+        font-size: 30px;
+        flex-direction: column;
+        height: auto;
+        width: 20vw;
+    }
+
+    button {
         font-size: 20px;
         flex-direction: column;
         height: auto;
@@ -245,6 +241,9 @@ td, th {
     button.submit {
         font-size: 30px;
 }
+    button {
+        font-size: 30px;
+    }
 }
 
 @media screen and (max-width: 1100px) {
@@ -259,6 +258,9 @@ td, th {
     button.submit {
         font-size: 30px;
 }
+    button {
+        font-size: 40px;
+    }
 }
 
 @media screen and (min-width: 1253) {

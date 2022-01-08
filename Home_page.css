@@ -224,6 +224,25 @@ button.contact::before {
     .heading_main {
         font-size: 16px;
     }
+
+    .row-of-skills {
+        flex-direction: column;
+    }
+
+    .p-skills {
+        width: auto;
+    }
+
+    .p-education{
+        text-align: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    iframe {
+        height: 50vh;
+
+    }
 }
 
 @media screen and (max-width: 768px) {
