@@ -363,14 +363,6 @@ h4 {
     }
 }
 
-@media screen and (max-width: 1300px) {
-    .fa-cloud-moon {
-        position: absolute;
-        top: 78%;
-        font-size: 60px;
-    }
-}
-
 @media screen and (min-width: 1440px){
     body {
         overflow: hidden;
