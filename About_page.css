@@ -156,8 +156,8 @@ button {
     transition: .2s;
 }
 button:hover {
-    border-color: orangered;
-    color: orangered;
+    border-color: #e25822;
+    color: #e25822;
 }
 
 a {
@@ -188,8 +188,8 @@ button.about::before {
 }
 
 button.about {
-    color: orangered;
-    border-color: orangered;
+    color: #e25822;
+    border-color: #e25822;
 }
 button.contact::before {
     font-family: "Font Awesome 5 Free";
@@ -258,7 +258,7 @@ th {
 }
 #chev:hover {
     cursor: pointer;
-    color: orangered;
+    color: #e25822;
 }
 hr {
     border: solid;

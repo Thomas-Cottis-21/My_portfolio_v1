@@ -7,6 +7,7 @@ const enableDarkMode = () => {
     document.getElementById("menu-dwnl").classList.add("switch-menu-button");
     document.getElementById("menu-cont").classList.add("switch-menu-button");
     document.getElementById("menu-home").classList.add("switch-menu-button");
+    //Top is index page
     document.getElementById("dark").classList.toggle("fa-sun");
     localStorage.setItem("darkMode", "enabled");
 };
@@ -18,6 +19,8 @@ const disableDarkMode = () => {
     document.getElementById("menu-dwnl").classList.remove("switch-menu-button");
     document.getElementById("menu-cont").classList.remove("switch-menu-button");
     document.getElementById("menu-home").classList.remove("switch-menu-button");
+    //Top is index page
+
     document.getElementById("dark").classList.toggle("fa-sun");
     localStorage.setItem("darkMode", "disabled");
 };

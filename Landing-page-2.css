@@ -5,7 +5,7 @@ body {
 }
 
 button.btn:hover {
-    color: orangered;
+    color: #e25822;
 }
 
 .container {
@@ -27,8 +27,6 @@ img {
     width: auto;
     justify-content: right;
     transition-duration: .5s;
-    animation-name: fade;
-    animation-duration: 1.5s;
 }
 
 img:hover {
@@ -36,18 +34,7 @@ img:hover {
     filter: drop-shadow(8px 8px 10px black);
 }
 
-/* title and intro sentences styling*/
-
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translate3d(0,40px,0);
-        }
-    to {
-        opacity: 1;
-        transform: translate3d(0,0,0);
-    }
-}
+/*----------------------------Title and intro sentences styling----------------------------*/
 
 .title {
     position: relative;
@@ -62,20 +49,16 @@ h1 {
     font-size: 120px;
     color: orange;
     margin-bottom: 0px;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 
 h3 {
     display: flex;
     font-family: abel;
     font-size: 60px;
-    color: gray;
+    color: rgba(192, 197, 206);
     margin-top: 0px;
-    animation-name: fade;
-    animation-duration: 2s;
 }
-/* button and image styling*/
+/*---------------------------Button and image styling---------------------------------------*/
 .flexbox-button {
     display: flex;
     flex-direction: row;
@@ -84,7 +67,7 @@ h3 {
 }    
 
 button {
-    color: gray;
+    color: rgba(192, 197, 206);
 }
 
 button.menu {
@@ -96,7 +79,6 @@ button.menu {
     border-color: orange;
     font-family: abel;
     font-size: 30px;
-    
     width: 300px;
     height: 100px;
     margin-top: 150px;
@@ -105,8 +87,8 @@ button.menu {
 }
 
 button:hover {
-    border-color: orangered;
-    color: orangered;
+    border-color: #e25822;
+    color: #e25822;
     cursor: pointer;
 }
 
@@ -116,13 +98,11 @@ h4 {
     text-align: left;
     font-family: abel;
     font-size: 40px;
-    color: gray;
+    color: rgba(192, 197, 206);
     margin-top: 50px;
     margin-left: 15px;
-    animation-name: fade;
-    animation-duration: 4s;
 }
-
+/*-----------------------------------------Dark Mode styles ----------------------------------*/
 .switch-theme {
     background-color: rgb(41, 41, 41);
 }
@@ -148,15 +128,13 @@ h4 {
     font-size: 90px;
     color: gray;
     transition-duration: .5s;
-    animation-name: fade;
-    animation-duration: 5s;
 }
 
 .fa-sun {
     color: yellow;
 }
 
-/* media queries*/
+/*------------------------------Media queries----------------------------------------*/
 @media screen and (max-width: 768px){
     body {
         overflow: scroll;

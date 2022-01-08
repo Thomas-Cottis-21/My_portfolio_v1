@@ -17,30 +17,28 @@ body {
     background-color: rgb(41, 41, 41);
 }
 
-@keyframes fade {
-    from {
-        opacity: 0;
-        transform: translate3d(0,40px,0);
-    }
-    to {
-        opacity: 1;
-        transform: translate3d(0,0,0);
-    }
+.switchH3 {
+    color: #e25822;
 }
+
+.switch-menu-button {
+    color: whitesmoke;
+}
+
+.switch-text {
+    color: whitesmoke;
+}
+
 
 .heading_top {
     display: flex;
     align-items: center;
-    
     border-radius: 10px;
-    
     width: 95vw;
     height: 15vh;
     margin: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
-    animation-name: fade;
-    animation-duration: 1s;
 }
 
 .heading_main {
@@ -50,12 +48,13 @@ body {
     font-size: 20px;
     line-height: 2;
     border-radius: 10px;
-    background-color: rgba(242, 242, 242, .6);
+    background-color: rgba(192, 197, 206, .6);
     width: 95vw;
     height: auto;
+    padding-left: 35px;
+    padding-right: 35px;
+    box-sizing: border-box;
     margin-bottom: 10px;
-    animation-name: fade;
-    animation-duration: 2s;
 }
 
 h3 {
@@ -77,7 +76,7 @@ h3 {
     font-size: 20px;
     line-height: 2;
     border-radius: 10px;
-    background-color: rgba(242, 242, 242, .6);
+    background-color: rgba(192, 197, 206, .6);
     width: 95vw;
 }
 
@@ -105,6 +104,26 @@ h2 {
     display: flex;
 }
 
+.main-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: spartan;
+    font-size: 20px;
+    background-color: rgba(192, 197, 206, .6);
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 95vw;
+    padding-bottom: 25px;
+}
+
+iframe {
+    height: 80vh;
+    width: 90vw;
+    border-radius: 10px;
+    border: none;
+}
+
 /* navigation bar, paragraph, buttons and small icons styling*/
 
 nav {
@@ -119,7 +138,7 @@ button {
     text-align: center;
     width: 20vw;
     height: 10vh;
-    color: gray;
+    color: rgba(192, 197, 206, .6);
     font-family: "abel";
     font-size: 40px;
     border-style: solid;
@@ -132,8 +151,8 @@ button {
 }
 
 button:hover {
-    border-color: orangered;
-    color: orangered;
+    border-color: #e25822;
+    color: #e25822;
     cursor: pointer;
     }
 
@@ -147,7 +166,7 @@ p {
 }
 
 .click_me {
-    color: orangered;
+    color: #e25822;
     display: inline;
 }
 
@@ -180,8 +199,8 @@ button.about::before {
 }
 
 button.home {
-    color: orangered;
-    border-color: orangered;
+    color: #e25822;
+    border-color: #e25822;
 }
 
 button.contact::before {
