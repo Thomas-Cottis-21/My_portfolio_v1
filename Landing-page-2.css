@@ -363,6 +363,16 @@ h4 {
     }
 }
 
+@media screen and (max-width: 1300px) {
+    h4 {
+        margin-top: 0;
+    }
+    .fa-cloud-moon {
+        font-size: 60px;
+        color: red;
+    }
+}
+
 @media screen and (min-width: 1440px){
     body {
         overflow: hidden;
