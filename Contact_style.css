@@ -81,6 +81,10 @@ button.submit {
     transition: .2s;
 }
 
+button.submit:hover {
+    cursor: pointer;
+}
+
 button.home::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
@@ -120,13 +124,14 @@ button.contact::before {
 /*Form styling*/
 h1 {
     font-family: abel;
-    color: orange;
+    color: #e25822;
     font-size: 50px;
     text-align: center;
 }
 
 form {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
@@ -156,10 +161,14 @@ p {
     align-items: baseline;
 }
 
-
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 table, th, td {
     color: rgba(192, 197, 206);
-    padding: 10px;
     width: 75vw;
 }
 table {
@@ -187,7 +196,11 @@ td, th {
     .heading_top {
         height: 20vh;
     }
+    table, th, td {
+        color: rgba(192, 197, 206);
+        width: 75vw; 
     }
+}
 
 @media screen and (max-width: 768px) {
     body {

@@ -39,6 +39,7 @@ i { /* This also affects the moon dark mode button*/
     justify-content: center;
     font-family: abel;
     font-size: 50px;
+    color: #e25822;
 }
 .grid {
     display: grid;
@@ -180,7 +181,7 @@ button.contact::before {
 /* Table styling*/
 caption {
     font-family: abel;
-    color: black;
+    color: #e25822;
     font-size: 50px;
     padding: 30px;
 }
@@ -219,6 +220,7 @@ th {
     font-family: abel;
     font-size: 50px;
     align-items: center;
+    color: #e25822;
 }
 #expand {
     display: flex;
@@ -227,11 +229,11 @@ th {
     width: 50px;
     height: 50px;
     margin: auto;
-    color: orange;
+    color: #e25822;
 }
 #expand:hover {
     cursor: pointer;
-    color: #e25822;
+    color: orange;
 }
 hr {
     border: solid;
@@ -244,7 +246,8 @@ hr {
     display: flex;
     justify-content: center;
     font-family: abel;
-    font-size: 30px; 
+    font-size: 30px;
+    color: orange; 
 }
 .paraprojects {
     display: flex;
