@@ -123,8 +123,8 @@ h4 {
     border: none;
     background: transparent;
     position: fixed;
-    left: 0;
-    bottom: 0;
+    right: 0;
+    top: 0;
     font-size: 90px;
     color: gray;
     transition-duration: .5s;
@@ -278,12 +278,7 @@ h4 {
         width: 100vw;
         height: auto;
     }
-    .fa-cloud-moon {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        font-size: 90px;
-    }
+    
         }
     
 
@@ -353,12 +348,7 @@ h4 {
     img {
         width: 100vh;
     }
-    .fa-cloud-moon {
-        position: fixed;
-        left: 60;
-        bottom: 0;
-        font-size: 90px;
-    }
+    
 }
 
 @media screen and (min-width: 1253px) {
@@ -373,24 +363,14 @@ h4 {
     h4 {
         font-size: 30px;
     }
-    .fa-cloud-moon {
-        position: fixed;
-        left: 150px;
-        bottom: 0;
-        font-size: 90px;
-    }
+    
 }
 
 @media screen and (max-width: 1300px) {
     h4 {
         margin-top: 0;
     }
-    .fa-cloud-moon {
-        position: fixed;
-        left: 150;
-        bottom: 0;
-        font-size: 40px;
-    }
+    
 }
 
 @media screen and (min-width: 1440px){
@@ -461,10 +441,5 @@ h4 {
         width: 100vh;
         height: 100vh;
     }
-    .fa-cloud-moon {
-        position: fixed;
-        left: 0;
-        bottom: 0;
-        font-size: 90px;
-    }
+    
 }

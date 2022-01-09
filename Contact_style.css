@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .heading_top {
@@ -24,7 +23,6 @@ body {
     border-radius: 10px;
     width: 95vw;
     height: 15vh;
-    margin: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
@@ -189,13 +187,6 @@ td, th {
     .heading_top {
         height: 20vh;
     }
-    button {
-        font-size: 10px;
-    }
-    i {
-        font-size: 50px;
-    }
-
     }
 
 @media screen and (max-width: 768px) {
@@ -271,4 +262,7 @@ td, th {
     button.submit {
         font-size: 40px;
 }
+    button {
+        font-size: 40px;
+    }
 }
