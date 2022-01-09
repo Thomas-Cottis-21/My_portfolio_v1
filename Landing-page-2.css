@@ -123,8 +123,8 @@ h4 {
     border: none;
     background: transparent;
     position: fixed;
-    right: 0;
-    top: 0;
+    right: 50px;
+    top: 50px;
     font-size: 90px;
     color: gray;
     transition-duration: .5s;
