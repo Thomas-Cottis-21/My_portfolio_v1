@@ -217,7 +217,11 @@ button.contact::before {
 /* media queries*/
 
 @media screen and (max-width: 500px) {
-    
+    h2 {
+        font-size: 25px;
+        text-align: center;
+        word-wrap: break-word;
+    }
 }
 
 @media screen and (max-width: 768px) {

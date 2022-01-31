@@ -61,6 +61,16 @@ a {
     display: flex;
     text-decoration: none;
 }
+a.link {
+    display: inline;
+    position: relative;
+    color: orange;
+}
+
+a.link:hover {
+    color: rgba(192, 197, 206);
+    text-decoration: underline;
+}
 
 button.submit {
     display: flex;
@@ -128,7 +138,12 @@ h1 {
     font-size: 50px;
     text-align: center;
 }
-
+h2 {
+    font-family: abel;
+    color: #e25822;
+    font-size: 30px;
+    text-align: center;
+}
 form {
     display: flex;
     justify-content: center;
@@ -198,7 +213,10 @@ td, th {
     }
     table, th, td {
         color: rgba(192, 197, 206);
-        width: 75vw; 
+        
+    }
+    td {
+        padding: 10px;
     }
 }
 
@@ -239,6 +257,9 @@ td, th {
     button.contact::before {
         font-size: 20px;
     }
+    td {
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -247,6 +268,9 @@ td, th {
 }
     button {
         font-size: 30px;
+    }
+    td {
+        padding: 15px;
     }
 }
 
@@ -257,6 +281,7 @@ td, th {
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+    
 }
 @media screen and (min-width: 1024px) {
     button.submit {
