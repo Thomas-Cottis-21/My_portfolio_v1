@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="Contact_style.css">
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     </head>
     <body>
-        <section class="container">
+        <class class="container">
             <header>
                 <div class="heading_top"> 
                     <nav>
@@ -19,7 +21,8 @@
                 </div>
             </header>
     
-            <h1> Let's collaborate to help you get out there.</h1>
+            <h1> Let's make this happen</h1>
+            <!--
             <form action="https://form-test.slccwebdev.com/form-success.php" method="get">
 
                 <label for="name">Your name or Company:</label>
@@ -67,73 +70,29 @@
             
                 
             </form>
+            -->
+            <h2>
+                Cellphone: <a class="link" href="tel:3853352336">(385)-335-2336</a></br>
+                Email: <a class="link" href="mailto:tomocottis21@gmail.com">tomcottis21@gmail.com</a><br/>
+
+            </h2>
         </section>
 
-        <h1>Find out what my friends and family say about me!</h1>
+        <h1 data-aos="fade-up">Find out what my friends and family say about me!</h1>
 
-        <table>
+        <table data-aos="fade-up">
             <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Name:</th>
-                    <th>Last name:</th>
-                    <th>Relation:</th>
-                    <th>Contact:</th>
-                </tr>
+                
             </thead>
             <tbody id ="tbReferences">
 
             </tbody>
         </table>
-        <script>
-            const body = document.body
-            const references = [
-            {
-                first: 'Shaunly',
-                last: 'Cottis',
-                relation: 'Mother',
-                contact: 'shaunly@nationalDME.net'
-            },
-            {
-                    
-                first: 'Scott',
-                last: 'Cottis',
-                relation: 'Father',
-                contact: 'scott@bracefit.com'
-            },
-            {
-                first: 'Cameron',
-                last: 'Horne',
-                relation: 'Friend',
-                contact: 'seahorne2112@gmail.com'
-            },
-            ];
-
-            
-            let tbReferences = document.getElementById('tbReferences');
-            references.forEach((reference, index) => {
-                let referenceHTML = document.createElement('tr')
-                let number = document.createElement('td')
-                let first = document.createElement('td')
-                let last = document.createElement('td')
-                let relation = document.createElement('td')
-                let contact = document.createElement('td')
-
-                number.innerHTML = index + 1
-                first.innerHTML = reference.first
-                last.innerHTML = reference.last
-                relation.innerHTML = reference.relation
-                contact.innerHTML = reference.contact
-                
-                referenceHTML.append(number)
-                referenceHTML.append(first)
-                referenceHTML.append(last)
-                referenceHTML.append(relation)
-                referenceHTML.append(contact)
-                tbReferences.append(referenceHTML)
-            })
-
-        </script>
+        <script src="JavaScript_contact.js"></script>
         <script src="JavaScript_DarkMode.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>

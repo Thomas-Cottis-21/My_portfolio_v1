@@ -15,7 +15,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 50px;
 }
 
 .heading_top {
@@ -24,7 +23,6 @@ body {
     border-radius: 10px;
     width: 95vw;
     height: 15vh;
-    margin: auto;
     margin-bottom: 10px;
     justify-content: space-evenly;
 }
@@ -63,6 +61,16 @@ a {
     display: flex;
     text-decoration: none;
 }
+a.link {
+    display: inline;
+    position: relative;
+    color: orange;
+}
+
+a.link:hover {
+    color: rgba(192, 197, 206);
+    text-decoration: underline;
+}
 
 button.submit {
     display: flex;
@@ -81,6 +89,10 @@ button.submit {
     background-color: transparent;
     border-color: orange;
     transition: .2s;
+}
+
+button.submit:hover {
+    cursor: pointer;
 }
 
 button.home::before {
@@ -122,13 +134,19 @@ button.contact::before {
 /*Form styling*/
 h1 {
     font-family: abel;
-    color: orange;
+    color: #e25822;
     font-size: 50px;
     text-align: center;
 }
-
+h2 {
+    font-family: abel;
+    color: #e25822;
+    font-size: 30px;
+    text-align: center;
+}
 form {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 20px;
@@ -158,10 +176,14 @@ p {
     align-items: baseline;
 }
 
-
+table {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 table, th, td {
     color: rgba(192, 197, 206);
-    padding: 10px;
     width: 75vw;
 }
 table {
@@ -189,14 +211,14 @@ td, th {
     .heading_top {
         height: 20vh;
     }
-    button {
-        font-size: 10px;
+    table, th, td {
+        color: rgba(192, 197, 206);
+        
     }
-    i {
-        font-size: 50px;
+    td {
+        padding: 10px;
     }
-
-    }
+}
 
 @media screen and (max-width: 768px) {
     body {
@@ -235,6 +257,9 @@ td, th {
     button.contact::before {
         font-size: 20px;
     }
+    td {
+        padding: 10px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -243,6 +268,9 @@ td, th {
 }
     button {
         font-size: 30px;
+    }
+    td {
+        padding: 15px;
     }
 }
 
@@ -253,6 +281,7 @@ td, th {
         background-attachment: fixed;
         background-repeat: no-repeat;
     }
+    
 }
 @media screen and (min-width: 1024px) {
     button.submit {
@@ -271,4 +300,7 @@ td, th {
     button.submit {
         font-size: 40px;
 }
+    button {
+        font-size: 40px;
+    }
 }
