@@ -47,7 +47,7 @@
 
                     $newval = $dolar_sol * $I_have;
 
-                    echo "\nMath is fun when it's aplicable. Therefore, $I_have dollars in Peru would be $newval soles, so spending money can be too much fun!";
+                    echo "\nMath is fun when it's aplicable. Therefore, $I_have dollars in Peru would be $newval soles, so spending money can be a little too much fun!";
                 ?>
             </div>
             <div class="main-2">
