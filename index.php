@@ -19,8 +19,8 @@
             <h3 id="firstH3">I help professionals bring their solutions to the world stage.</h3>
 
             <div class="flexbox-button">
-                <a href="Home.html"><button class="menu" id="menu-home">Explore my portfolio</button></a>
-                <a href="Contact.html"><button class="menu" id="menu-cont">Contact me!</button></a>
+                <a href="Home.php"><button class="menu" id="menu-home">Explore my portfolio</button></a>
+                <a href="Contact.php"><button class="menu" id="menu-cont">Contact me!</button></a>
                 <a href="resume_johana_4me.pdf" download ><button class="menu" id="menu-dwnl">Download my Resume!</button></a>
             </div> 
             <h4 id="newPage"></h4>

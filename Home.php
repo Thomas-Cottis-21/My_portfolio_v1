@@ -15,10 +15,10 @@
             <header>
                 <div class="heading_top">
                     <nav>
-                        <a href="index.html"><button class="index" id="landing-page">Landing Page</button></a>
-                        <a href="Home.html"><button class="home" id="home">Home</button></a>
-                        <a href="About.html"><button class="about" id="about">About</button></a>
-                        <a href="Contact.html"><button class="contact" id="contact">Contact</button></a>
+                        <a href="index.php"><button class="index" id="landing-page">Landing Page</button></a>
+                        <a href="Home.php"><button class="home" id="home">Home</button></a>
+                        <a href="About.php"><button class="about" id="about">About</button></a>
+                        <a href="Contact.php"><button class="contact" id="contact">Contact</button></a>
                     </nav>     
                 </div>
             </header>
@@ -26,8 +26,29 @@
                 <p>Hey! I'm Thomas and I live in Salt Lake City, Utah! I help people create dynamic, asthetic and interactive websites for their businesses, companies and even personal persuits. I have built 
                     this portfolio to be able to connect to these professionals who want to be launched out to the world stage along with their ideas and 
                     passions. Here in the home section you'll find my skill sets, where I've been studying, for how long and more! Here you'll find more about me and exactly what I can offer you or your business. If inspired, please fill out the contact
-                    information in the contact page, or simply <a class="click_me" href="Contact.html">click here!</a> 
+                    information in the contact page, or simply <a class="click_me" href="Contact.php">click here!</a> 
                 </p>
+                <?php 
+                    echo "I love to experiment and find solutions to the challenges that I face.";
+
+                    $challenge1 = "the visa process for my fiance";
+
+                    $challenge2 = "working and studying";
+
+                    $challenge3 = "finding time for friends and hobbies";
+
+                    echo "\nSome challenges include $challenge1, $challenge2, and $challenge3.";
+
+                    $I_have = 165;
+
+                    $dolar_sol = 3.75;
+
+                    echo "\nAnother challenge that comes up with travelling like I do is exchange rates. For example, as of February 11th, 2022, the exchange rate is $dolar_sol peruvian soles for every one dollar.";
+
+                    $newval = $dolar_sol * $I_have;
+
+                    echo "\nMath is fun when it's aplicable. Therefore, $I_have dollars in Peru would be $newval soles, so spending money can be too much fun!";
+                ?>
             </div>
             <div class="main-2">
                 <h3>

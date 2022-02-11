@@ -13,10 +13,10 @@
             <header>
                 <div class="heading_top"> 
                     <nav>
-                        <a href="index.html"><button class="index">Landing Page</button></a>
-                        <a href="Home.html"><button class="home">Home</button></a>
-                        <a href="About.html"><button class="about">About</button></a>
-                        <a href="Contact.html"><button class="contact">Contact</button></a>
+                        <a href="index.php"><button class="index">Landing Page</button></a>
+                        <a href="Home.php"><button class="home">Home</button></a>
+                        <a href="About.php"><button class="about">About</button></a>
+                        <a href="Contact.php"><button class="contact">Contact</button></a>
                     </nav>
                 </div>
             </header>
