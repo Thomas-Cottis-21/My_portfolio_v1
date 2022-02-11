@@ -24,9 +24,9 @@
             </header>
             <div class="heading_main">
                 <p>Hey! I'm Thomas and I live in Salt Lake City, Utah! I help people create dynamic, asthetic and interactive websites for their businesses, companies and even personal persuits. I have built 
-                    this portfolio to be able to connect to these professionals who want to be launched out to the world stage along with their ideas and 
-                    passions. Here in the home section you'll find my skill sets, where I've been studying, for how long and more! Here you'll find more about me and exactly what I can offer you or your business. If inspired, please fill out the contact
-                    information in the contact page, or simply <a class="click_me" href="Contact.php">click here!</a> 
+                this portfolio to be able to connect to these professionals who want to be launched out to the world stage along with their ideas and 
+                passions. Here in the home section you'll find my skill sets, where I've been studying, for how long and more! Here you'll find more about me and exactly what I can offer you or your business. If inspired, please fill out the contact
+                information in the contact page, or simply <a class="click_me" href="Contact.php">click here!</a> 
                 </p>
                 <?php 
                     echo "I love to experiment and find solutions to the challenges that I face.";
