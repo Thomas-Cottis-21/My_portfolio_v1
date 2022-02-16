@@ -110,7 +110,7 @@
                 <h2 id="projects" class="jobs">Projects</h2>
                 <i id="expand" class="fas fa-compress-arrows-alt"></i>
 
-                <h4 id="iframe" class="headprojects">Project Polygraph</h4>
+                <h4 class="headprojects">Project Polygraph</h4>
                 <hr>
                 <p id="iframedesc" class="paraprojects">My grandfather, Joseph Cottis is highly trained in lie detecting thanks to the F.B.I. He worked there for nearly 30 years!
                     Since he's retired from the Bureau, he has retained much of his training in the art of detecting lies and helping regular people free themselves from 
@@ -118,13 +118,12 @@
                     The web site had served him well, but I knew that I could do much better than them and felt obligated to help him. Eager for any experience that I could get in web development 
                     I took to the task of building my Grandfather a new, trustworthy, aesthetic and modern web presence.
                 </p>
-                <h4 id="iframe1" class="headprojects">Codecademy</h4>
+                <h4 class="headprojects">Shalora flute page</h4>
                 <hr>
-                <p id="iframedesc1" class="paraprojects">I am currently in the Salt Lake Community College Web Developer program and I love it! I have finally found my passion and dorrway into my future, but I 
-                    wanted more. The class was good, but I was better. It was then that I found codecademy. I first took their free javascript course that got me hooked! From then on I kept 
-                    taking more courses and even purchased the pro subscription to keep feeding my wanting to learn brain. The following are my achievements there.
+                <p id="iframedesc1" class="paraprojects">Shalora Horne is the wife of my best friend. They recently had a baby and now she is a stay at home mother, but still needs to work. I ended up creating them a website to launch them out to the world. This website is a template that was heavily modified by me in order to satisfy their needs. I used a template because they needed rapid, mobile and tablet friendly development. I think it looks and operates like a charm.</br>
                 </p>
-                <h4 id="iframe2" class="headprojects">My Portfolio</h4>
+                <iframe id="iframe1" src="https://shaloraflute.netlify.app/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Shalora flute page"></iframe>
+                <h4 class="headprojects">My Portfolio</h4>
                 <hr>
                 <p id="iframedesc2" class="paraprojects">You're currently exploring my portfolio, one place where all of my relevant achievments can be stored for people to see! My portfolio was built using straight up HTML, CSS and JavaScript.
                     No template or external wordpress was used. I made it like this partly so I could experiment with my capabilities, but also to display what I can do on my own. I am proud of it, but I can keep going.
