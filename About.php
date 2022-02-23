@@ -69,6 +69,9 @@
                             </span>
                     </div>
                 </div>
+
+                
+
             <table data-aos="fade-up">
                 <caption>Where did I develop character?</caption>
                 <tr>
@@ -104,6 +107,8 @@
                     <td>Decided on Web Development.</td>
                 </tr>
             </table>
+
+            <?php include "mySkills.php"; ?>
         
 
             <div class="mainprojects" data-aos="fade-up">
