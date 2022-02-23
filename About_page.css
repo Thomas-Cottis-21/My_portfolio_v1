@@ -109,6 +109,35 @@ h3 {
     font-size: 40px;
     padding-top: none;
 }
+
+.hard-skills-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.hard-skills-p {
+    text-align: center;
+    font-size: 25px;
+    font-family: spartan;
+}
+
+li {
+    list-style: none;
+    font-family: spartan;
+    font-size: 20px;
+    line-height: 300%;
+    text-align: center;
+}
+ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 /* Navigation bar, buttons and smaller icons styling*/
 nav {
     display: flex;

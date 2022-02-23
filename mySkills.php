@@ -14,13 +14,6 @@ function newList($array){
     };
 }
 
-echo "Although I have soft skills, my hard skills are: ";
-
-newList($mySkills);
-
-echo "Some of my hobbies are: ";
-
-newList($myHobbies);
-
+?>
 
 

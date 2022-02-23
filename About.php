@@ -13,6 +13,25 @@
         
     </head>
     <body>
+    <?php
+
+$mySkills = array("HTML", "CSS", "JavaScript", "PHP / MySQL");
+
+$myHobbies = array("Welding", "Woodworking", "Designing and creating modern furniture", "Creating aestheticaly pleasing things", "Building computers", "Playing videogames", "Travelling");
+
+function newList($array){
+    echo "<ul>";
+    foreach ($array as $listItem){
+        echo "<li>";
+    
+        echo $listItem;
+    
+        echo "</li>";
+    };
+    echo "</ul>";
+}
+
+?>
         
             <header>
                 <div class="container">
@@ -26,7 +45,7 @@
                     </div>
                 </div>
             </header> 
-            <h2 class="grid-header">I am...</h2>
+            <h2 class="grid-header">Soft Skills</h2>
                 <div class="grid">
                     <div class="tooltip">
                             <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
@@ -70,7 +89,18 @@
                     </div>
                 </div>
 
-                
+                <h2 class="grid-header">Hard Skills</h2>
+                <div class="hard-skills-section">
+                    <p class="hard-skills-p">Although I have valuable soft skills, my hard skills are just as important. </p>
+                    <?php 
+
+                    echo "\n";
+
+                    newList($mySkills);
+                    
+                    ?>
+
+                </div>
 
             <table data-aos="fade-up">
                 <caption>Where did I develop character?</caption>
@@ -108,7 +138,7 @@
                 </tr>
             </table>
 
-            <?php include "mySkills.php"; ?>
+            
         
 
             <div class="mainprojects" data-aos="fade-up">
