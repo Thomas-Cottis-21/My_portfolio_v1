@@ -1,6 +1,6 @@
 /*all body, container and headings should be identicle across css*/
 body {
-    background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
+    background-image: url("/Images/Picsart_21-12-26_15-15-05-597.png");
     background-size: contain;
     background-attachment: fixed;
     background-repeat: no-repeat;

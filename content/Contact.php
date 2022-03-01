@@ -13,7 +13,7 @@
             <header>
                 <div class="heading_top"> 
                     <nav>
-                        <a href="index.php"><button class="index">Landing Page</button></a>
+                        <a href="/index.php"><button class="index">Landing Page</button></a>
                         <a href="/content/Home.php"><button class="home">Home</button></a>
                         <a href="/content/About.php"><button class="about">About</button></a>
                         <a href="/content/Contact.php"><button class="contact">Contact</button></a>
