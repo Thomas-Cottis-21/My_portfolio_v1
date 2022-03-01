@@ -1,12 +1,11 @@
 body {
-    overflow: scroll;
+    overflow: hidden;
 }
-#beach {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
+.flex {
+    display: flex;
+    flex-direction: column;
+}
+.header {
     z-index: 1;
 }
 h1 {
@@ -15,18 +14,51 @@ h1 {
     font-size: 120px;
     margin-bottom: 0;
 }
+.h3 {
+    color:rgba(192, 197, 206);
+}
 h3 {
     font-family: abel;
     font-size: 60px;
-    color: rgba(192, 197, 206);
     margin-top: 0;
+}
+.thanks-content {
+    z-index: 1;
 }
 p {
     font-size: 30px;
     font-family: spartan;
     color: rgba(192, 197, 206);
 }
-/* <----------------------Dark Mode Styles-----------------------> */
+.info {
+    width: 50vw;
+}
+hr {
+    border: solid;
+    border-color: orange;
+    width: 50vw;
+    margin: 0;
+}
+/*<------------------------------ Dark Mode Styles ----------------------------->*/
 .switchH3 {
     color: #e25822;
+}
+.switch-theme {
+    background-color: rgb(41, 41, 41);
+}
+@media (max-width: 1200px){
+    body {
+        overflow: visible;
+    }
+    .flex {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+    .info {
+        margin: auto;
+    }
+    hr {
+        margin: auto;
+    }
 }

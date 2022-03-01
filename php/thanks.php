@@ -11,24 +11,29 @@
     <title>Thanks!</title>
 </head>
 <body>
-    <video autoplay muted loop id="beach">
-        <source src="/beach-thanks-background.mp4" type="video/m4p">
-    </video>
-    <h1 id="thanks">Thanks for your interest!</h3>
-    <div class="h3">
-        <h3>I'll get back to you within 24 hours!</h3>
-    </div>
+    <section class="flex">
+        <div class="header">
+            <h1 id="thanks" data-aos="fade-right" data-aos-duration="2000">Thank you for your interest!</h1>
+            <div class="h3">
+                <h3 id="firstH3" data-aos="fade-left" data-aos-duration="2500">I'll get back to you within 24 hours!</h3>
+            </div>
+        </div>
+        
+        
+        <div class="thanks-content" data-aos="fade-left" data-aos-duration="2500">
+            <p class="info">You're name, number, email address have been recorded as: </p>
+            <hr id="line" data-aos="fade-left" data-aos-duration="3000">
+            <p><?=$_GET["name"]; ?></p>
+            <p><?=$_GET["email"]; ?></p>
+            <p><?=$_GET["number"]; ?></p>
+        </div>
+    </section>
     
-    <div class="thanks-content">
-        <p class="info">You're name, number, email address have been recorded as: </p>
-        <p><?=$_GET["name"]; ?></p>
-        <p><?=$_GET["email"]; ?></p>
-        <p><?=$_GET["number"]; ?></p>
-    </div>
-    
+    <script src="/Js/JavaScript_DarkMode.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
-
-    <script src="/Js/JavaScript_DarkMode.js" ></script>
-    
 </body>
 </html>
