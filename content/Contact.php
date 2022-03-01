@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link rel="stylesheet" href="Contact_style.css">
+        <link rel="stylesheet" href="/css/Contact_style.css">
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
@@ -88,8 +88,8 @@
 
             </tbody>
         </table>
-        <script src="JavaScript_contact.js"></script>
-        <script src="JavaScript_DarkMode.js"></script>
+        <script src="/Js/JavaScript_contact.js"></script>
+        <script src="/Js/JavaScript_DarkMode.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();

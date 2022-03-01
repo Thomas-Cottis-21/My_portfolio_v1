@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
@@ -19,22 +19,22 @@
             <h3 id="firstH3">I help professionals bring their solutions to the world stage.</h3>
 
             <div class="flexbox-button">
-                <a href="Home.php"><button class="menu" id="menu-home">Explore my portfolio</button></a>
-                <a href="Contact.php"><button class="menu" id="menu-cont">Contact me!</button></a>
+                <a href="/content/Home.php"><button class="menu" id="menu-home">Explore my portfolio</button></a>
+                <a href="/content/Contact.php"><button class="menu" id="menu-cont">Contact me!</button></a>
                 <a href="resume_johana_4me.pdf" download ><button class="menu" id="menu-dwnl">Download my Resume!</button></a>
             </div> 
             <h4 id="newPage"></h4>
             
         </div>
         <div class="pics">
-                <img src="Images/orange-hex-up.png">
+                <img src="/Images/orange-hex-up.png">
                 
         </div>
         
         
     </section>
     <i class="fas fa-cloud-moon" id="dark"></i>
-    <script src="JavaScript_index.js"></script>
-    <script src="JavaScript_DarkMode.js"></script>
+    <script src="/Js/JavaScript_index.js"></script>
+    <script src="/Js/JavaScript_DarkMode.js"></script>
 </body>
 </html>

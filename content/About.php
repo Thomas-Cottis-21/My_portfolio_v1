@@ -3,7 +3,7 @@
     <head>
         <title>About</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="About_page.css">
+        <link rel="stylesheet" href="/css/About_page.css">
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
@@ -168,8 +168,8 @@ function newList($array){
         src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
         crossorigin="anonymous"></script>
-            <script src="JavaScript_about.js"></script>
-            <script src="JavaScript_DarkMode.js"></script>
+            <script src="/Js/JavaScript_about.js"></script>
+            <script src="/Js/JavaScript_DarkMode.js"></script>
             <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
             <script>
                 AOS.init();

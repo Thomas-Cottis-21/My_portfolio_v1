@@ -5,7 +5,7 @@
         <title>Home</title>
         <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="Home_page.css">
+        <link rel="stylesheet" href="/css/Home_page.css">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         
@@ -15,10 +15,10 @@
             <header>
                 <div class="heading_top">
                     <nav>
-                        <a href="index.php"><button class="index" id="landing-page">Landing Page</button></a>
-                        <a href="Home.php"><button class="home" id="home">Home</button></a>
-                        <a href="About.php"><button class="about" id="about">About</button></a>
-                        <a href="Contact.php"><button class="contact" id="contact">Contact</button></a>
+                        <a href="/content/index.php"><button class="index" id="landing-page">Landing Page</button></a>
+                        <a href="/content/Home.php"><button class="home" id="home">Home</button></a>
+                        <a href="/content/About.php"><button class="about" id="about">About</button></a>
+                        <a href="/content/Contact.php"><button class="contact" id="contact">Contact</button></a>
                     </nav>     
                 </div>
             </header>
@@ -90,7 +90,7 @@
                 <iframe src="https://www.slcc.edu/continuinged/programs/web-dev.aspx" title="Salt Lake Community College Web Development Program"></iframe>
             </div>
         </section> 
-        <script src="JavaScript_DarkMode.js"></script>
+        <script src="/Js/JavaScript_DarkMode.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
         <script>
             AOS.init();
