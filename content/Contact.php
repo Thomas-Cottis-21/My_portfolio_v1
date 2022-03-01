@@ -22,8 +22,8 @@
             </header>
     
             <h1> Let's make this happen</h1>
-            <!--
-            <form action="https://form-test.slccwebdev.com/form-success.php" method="get">
+            
+            <form action="/php/thanks.php" method="get">
 
                 <label for="name">Your name or Company:</label>
                 <input type="text" name="name" id="name">
@@ -70,7 +70,7 @@
             
                 
             </form>
-            -->
+            
             <h2>
                 Cellphone: <a class="link" href="tel:3853352336">(385)-335-2336</a></br>
                 Email: <a class="link" href="mailto:tomocottis21@gmail.com">tomcottis21@gmail.com</a><br/>

@@ -1,0 +1,32 @@
+body {
+    overflow: scroll;
+}
+#beach {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+}
+h1 {
+    font-family: abel;
+    color: orange;
+    font-size: 120px;
+    margin-bottom: 0;
+}
+h3 {
+    font-family: abel;
+    font-size: 60px;
+    color: rgba(192, 197, 206);
+    margin-top: 0;
+}
+p {
+    font-size: 30px;
+    font-family: spartan;
+    color: rgba(192, 197, 206);
+}
+/* <----------------------Dark Mode Styles-----------------------> */
+.switchH3 {
+    color: #e25822;
+}
