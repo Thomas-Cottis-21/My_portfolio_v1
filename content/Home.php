@@ -15,7 +15,7 @@
             <header>
                 <div class="heading_top">
                     <nav>
-                        <a href="/content/index.php"><button class="index" id="landing-page">Landing Page</button></a>
+                        <a href="index.php"><button class="index" id="landing-page">Landing Page</button></a>
                         <a href="/content/Home.php"><button class="home" id="home">Home</button></a>
                         <a href="/content/About.php"><button class="about" id="about">About</button></a>
                         <a href="/content/Contact.php"><button class="contact" id="contact">Contact</button></a>
