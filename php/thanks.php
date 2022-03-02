@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Thanks!</title>
 </head>
-<body>
+<body style="overflow: visible";>
     <section class="flex">
         <div class="header">
             <h1 id="thanks" data-aos="fade-right" data-aos-duration="2000">Thank you for your interest!</h1>
@@ -28,6 +28,17 @@
             <p><?=$_GET["number"]; ?></p>
         </div>
     </section>
+
+    <?php
+        $to = "thomascottistest@gmail.com";
+        $subject ="New Website Contact";
+
+        $message = $_GET["name"] . "\n" . $_GET["number"] . "\n" . $_GET["email"] . "\n" . $_GET["comments"];
+
+        $message = wordwrap($message, 70);
+
+        mail($to, $subject, $message);
+    ?>
     
     <script src="/Js/JavaScript_DarkMode.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
