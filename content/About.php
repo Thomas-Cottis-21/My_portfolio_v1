@@ -8,9 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Spartan&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/c8c944ac43.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-        
-        
-        
+        <link rel="stylesheet" href="/css/jquery.lineProgressbar.css" />
     </head>
     <body>
     <?php
@@ -92,11 +90,21 @@ function newList($array){
                 <h2 class="grid-header">Hard Skills</h2>
                 <div class="hard-skills-section">
                     <p class="hard-skills-p">Although I have valuable soft skills, my hard skills are just as important. </p>
+                    <ul>
+                        <li>HTML</li>
+                        <div class="line-prog" line-progressbar data-percentage="85" data-progress-color="#f6a50b"></div>
+                        <li>CSS</li>
+                        <div class="line-prog" line-progressbar data-percentage="80" data-progress-color="#ea7434"></div>
+                        <li>JavaScript</li>
+                        <div class="line-prog" line-progressbar data-percentage="45" data-progress-color="#c74956"></div>
+                        <li>PHP</li>
+                        <div class="line-prog" line-progressbar data-percentage="25" data-progress-color="#8b2d74"></div>
+                    </ul>
                     <?php 
 
                     echo "\n";
 
-                    newList($mySkills);
+                    newList($myHobbies);
                     
                     ?>
 
@@ -180,5 +188,9 @@ function newList($array){
             <script>
                 AOS.init();
             </script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
+            <script src="/Js/jquery.lineProgressbar.js"></script>
+            
     </body>
 </html>

@@ -138,6 +138,9 @@ ul {
     padding: 0;
     margin: 0;
 }
+.line-prog {
+    width: 80vw;
+}
 /* Navigation bar, buttons and smaller icons styling*/
 nav {
     display: flex;
