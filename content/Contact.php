@@ -25,33 +25,21 @@
             
             <form action="/php/thanks.php" method="get">
 
-                <label for="name">Your name or Company:</label>
-                <input type="text" name="name" id="name">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Johana Ramirez">
                 
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email" required>
+                <input type="email" name="email" id="email" required placeholder="@gmail.com">
                 
 
                 <label for="number">Phone Number:</label>
                 <input type="text" name="number" id="number">
                 
                 <label for="comments">Say hi first!:</label>
-                <textarea id="comments" name="comments" cols="50" rows="4" >
-                </textarea>
+                <textarea placeholder="5 bucks if you can fill the whole thing..." id="comments" name="comments" cols="70" rows="6"></textarea>
 
-                <p>May I contact you?</p>
-                <div class="label-side">
-                    <label for="yes">Of Course!</label>
-                    <input type="radio" id="yes" name="contact-back" value="yes">
-                </div>
-
-                <div>
-                    <label for="no">Nope</label>
-                    <input type="radio" id="no" name="contact-back" value="no">
-                </div>
-
-                <p>If so, what is the most efficient way to get to you:</p>
+                <p>What's the best way to contact you?</p>
                 <div>
                     <label for="phone">Call</label>
                     <input type="checkbox" id="contactphone" name="contact-phone" value="Phone">
@@ -73,7 +61,7 @@
             
             <h2>
                 Cellphone: <a class="link" href="tel:3853352336">(385)-335-2336</a></br>
-                Email: <a class="link" href="mailto:tomocottis21@gmail.com">tomcottis21@gmail.com</a><br/>
+                Email: <a class="link" href=mailto:thomas@thomasandco.xyz>thomas@thomasandco.xyz</a><br/>
 
             </h2>
         </section>

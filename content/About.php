@@ -94,11 +94,11 @@ function newList($array){
                         <li>HTML</li>
                         <div class="line-prog" line-progressbar data-percentage="85" data-progress-color="#f6a50b"></div>
                         <li>CSS</li>
-                        <div class="line-prog" line-progressbar data-percentage="80" data-progress-color="#ea7434"></div>
+                        <div class="line-prog" line-progressbar data-percentage="75" data-progress-color="#ea7434"></div>
                         <li>JavaScript</li>
-                        <div class="line-prog" line-progressbar data-percentage="45" data-progress-color="#c74956"></div>
+                        <div class="line-prog" line-progressbar data-percentage="35" data-progress-color="#c74956"></div>
                         <li>PHP</li>
-                        <div class="line-prog" line-progressbar data-percentage="25" data-progress-color="#8b2d74"></div>
+                        <div class="line-prog" line-progressbar data-percentage="20" data-progress-color="#8b2d74"></div>
                     </ul>
                     <?php 
 

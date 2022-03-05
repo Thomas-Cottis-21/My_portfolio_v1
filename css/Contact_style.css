@@ -156,14 +156,62 @@ form {
 
 label {
     font-family: spartan;
-    font-size: 20px;
+    font-size: 25px;
     padding: 5px;
 }
-
+#name{
+    border: 2px solid;
+    border-color:rgba(192, 197, 206, .6);
+    width: 30vw;
+    height: 5vh;
+    font-size: 20px;
+    font-family: spartan;
+    border-radius: 10px;
+}
+#name:focus {
+    outline: none;
+}
+input[type=email]{
+    border: 2px solid;
+    border-color: rgba(192, 197, 206, .6);
+    width: 30vw;
+    height: 5vh;
+    font-size: 20px;
+    font-family: spartan;
+    border-radius: 10px;
+}
+input[type=email]{
+    outline: none;
+}
+#number {
+    border: 2px solid;
+    border-color:rgba(192, 197, 206, .6);
+    width: 15vw;
+    height: 5vh;
+    font-size: 20px;
+    font-family: spartan;
+    border-radius: 10px;
+}
+#number:focus {
+    outline: none;
+}
+#comments{
+    border: 2px solid;
+    border-color: rgba(192, 197, 206, .6);
+    text-align: left;
+    font-size: 20px;
+    font-family: spartan;
+    width: 50vw;
+    height: 30vh;
+    border-radius: 10px;
+}
+#comments:focus {
+    outline: none;
+}
 p {
     font-family: spartan;
     font-size: 20px;
-    border: solid;
+    border: solid 2px;
     border-color: orange;
     border-left: transparent;
     border-right: transparent;
