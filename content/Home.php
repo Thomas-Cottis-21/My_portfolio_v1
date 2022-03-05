@@ -25,10 +25,10 @@
             <div class="heading_main">
                 <p>Hey! I'm Thomas and I live in Salt Lake City, Utah! I help people create dynamic, asthetic and interactive websites for their businesses, companies and even personal persuits. I have built 
                 this portfolio to be able to connect to these professionals who want to be launched out to the world stage along with their ideas and 
-                passions. Here in the home section you'll find my skill sets, where I've been studying, for how long and more! Here you'll find more about me and exactly what I can offer you or your business. If inspired, please fill out the contact
+                passions. Here in the home section you'll find my skill sets, where I've been studying, for how long and more! <a class="click_me" href="/content/about.php">Here</a> you'll find more about me and exactly what I can offer you or your business. If inspired, please fill out the contact
                 information in the contact page, or simply <a class="click_me" href="Contact.php">click here!</a> 
                 </p>
-                <?php 
+                <!--<?php 
                     echo "I love to experiment and find solutions to the challenges that I face.";
 
                     $challenge1 = "the visa process for my fiance";
@@ -48,7 +48,7 @@
                     $newval = $dolar_sol * $I_have;
 
                     echo "\nMath is fun when it's aplicable. Therefore, $I_have dollars in Peru would be $newval soles, so spending money can be a little too much fun!";
-                ?>
+                ?>-->
             </div>
             <div class="main-2">
                 <h3>
@@ -78,7 +78,7 @@
                             Computer building
                         </h2>
                         <p class="p-skills">
-                            I am recently developing a skill that I had pretty much always wanted, but never had the money for. Knowing my way around computer architecture. I just built a new PC "for school" (obviously for gaming), but I have found a new love for it. 
+                            I am recently developing a skill that I had pretty much always wanted, but never had the money for. Knowing my way around computer architecture. I just built a new PC "for school" (obviously for gaming), but I have found a new, growing love for it. 
                         </p>
                     </div>
                 </div>

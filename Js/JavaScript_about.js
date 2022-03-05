@@ -1,7 +1,11 @@
 $("#expand").click(function() {
-    $("#iframedesc").slideToggle(250);
-    $("#iframe1").slideToggle(300);
-    $("#iframedesc1").slideToggle(350);
-    $("#iframedesc2").slideToggle(450);
+    $("#iframedesc0").slideToggle();
+    $("#iframe0").slideToggle();
+    $("#iframedesc1").slideToggle();
+    $("#iframe1").slideToggle();
+    $("#iframedesc2").slideToggle();
+    $("#iframe2").slideToggle();
+    $("#iframedesc3").slideToggle();
+    $("#iframe3").slideToggle();
     $("#expand").toggleClass("fas fa-compress-arrows-alt fas fa-expand-arrows-alt");
 });

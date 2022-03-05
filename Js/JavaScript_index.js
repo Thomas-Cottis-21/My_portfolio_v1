@@ -10,7 +10,7 @@ function popUp(){
     //variables of time to be tested against.
 
     const createName = () => {
-        let person = prompt("Please enter your name: (trust me, it'll be cool)", "Buzz Lightyear");
+        let person = prompt("Please enter your coolest nickname:", "Buzz Lightyear");
         person = localStorage.setItem("name", person);
     }
 

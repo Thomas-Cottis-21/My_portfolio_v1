@@ -51,7 +51,7 @@ function newList($array){
                             <div><i class="fas fa-laptop-code"></i><h3>Decided</h3></div>
                         <span class="tooltiptext">When it came time to finally choose a careerpath, I first went with my gut and went into something
                             technical like being a mechanic, but I quickly found out that programming was the route that I always really wanted, but never knew how to 
-                        harness until now. I am decided because I know that this is the life for me and I am willing to make it happen.</span>
+                        harness until now. I am decided because I know that this is the life for me and I am finally making it happen.</span>
                     </div>
                     <div class="tooltip">
                             <div><i class="fas fa-search-dollar"></i><h3>Business Oriented</h3></div>
@@ -63,7 +63,7 @@ function newList($array){
                     <div class="tooltip"> 
                             <div><i class="fas fa-calculator"></i><h3>Problem-Solver</h3></div>
                         <span class="tooltiptext">Another word for "Engineer" is "Problem-Solver". Anybody who has ever created anything finds out really early on that problems are part of the process.
-                            From welding up a new project to 3D printing a new prototype, figuring things out has given me success in everything that I put my mind to.
+                            From welding up a new project to 3D printing a new prototype, being a problem solver has given me success in almost everything that I put my mind to.
                         </span>
                     </div>
                     <div class="tooltip">
@@ -74,17 +74,17 @@ function newList($array){
                             </span>
                     </div>
                     <div class="tooltip">
-                            <div><i class="fas fa-crosshairs"></i><h3>Focused</h3></div>
+                            <div><i class="fas fa-crosshairs"></i><h3>Focused and driven</h3></div>
                             <span class="tooltiptext">I really became a focused person when I went on my mission to Lima, Peru. There I worked with my companions to spread the gospel everyday to the people there.
-                                This is so because in order to be successful there it takes weeks of hard work tightly collaborated in every case. If focus is lost, the case is as well. When I returned
-                                I could easily get to work on multiple projects of completely different styles at the same time and be successfulin all.
+                                This is so because in order to be successful in the field, it takes weeks of hard work tightly collaborated in every case. If focus is lost, the case is as well. When I returned
+                                I could easily get to work on multiple projects of completely different styles at the same time and be successful in all.
                             </span>
                     </div>
                     <div class="tooltip">
                             <div><i class="fas fa-glasses"></i><h3>Quick-learner</h3></div>
                             <span class="tooltiptext">I'm a quick learner because of my past expiriences. Along with being focused on my objectives, picking things up rapidly is 
-                                who I am. I became fluent in Spanish in just 6 months. I became sufficient in welding in just over 8. There are many other skills that I have developed 
-                                like sowing, web design and snowboarding that I have managed to master because of my focus, creativity and problem-solving character.
+                                who I am. I became fluent in Spanish in just 6 months. I became sufficient in welding in just over 3 weeks. There are many other skills and hobbies that I have developed 
+                                like sowing, web design, rock climbing, snowboarding and engineering that I have grown because of my focus, creativity and problem-solving character.
                             </span>
                     </div>
                 </div>
@@ -102,7 +102,7 @@ function newList($array){
 
                 </div>
 
-            <table data-aos="fade-up">
+            <table data-aos="fade-up" data-aos-once="true">
                 <caption>Where did I develop character?</caption>
                 <tr>
                     <th>Experiences</th>
@@ -141,28 +141,34 @@ function newList($array){
             
         
 
-            <div class="mainprojects" data-aos="fade-up">
+            <div class="mainprojects" data-aos="fade-up" data-aos-once="true">
                 <h2 id="projects" class="jobs">Projects</h2>
                 <i id="expand" class="fas fa-compress-arrows-alt"></i>
+                <h4 class="headprojects">Wagstaff Cerakote</h4>
+                <hr>
+                <p id="iframedesc0" class="paraprojects">Wagstaff Cerakote is one of my recent projects. My brother in law is starting a caraktoe business where he paints firearms while also making the outer coating much stronger and resistant to damage. He needed a web site in order to help place orders through email and to vastly improve his web presence. I used a bootstrap template for quick and simple development. However, I am heavily modifying it to his needs as well as adding new php in order to send confirmations as well as take requests through email.</p>
+                <iframe id="iframe0" src="https://joshcerakote.netlify.app/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Wagstaff Cerakote"></iframe> 
 
                 <h4 class="headprojects">Project Polygraph</h4>
                 <hr>
-                <p id="iframedesc" class="paraprojects">My grandfather, Joseph Cottis is highly trained in lie detecting thanks to the F.B.I. He worked there for nearly 30 years!
+                <p id="iframedesc1" class="paraprojects">My grandfather, Joseph Cottis is highly trained in lie detecting thanks to the F.B.I. He worked there for nearly 30 years!
                     Since he's retired from the Bureau, he has retained much of his training in the art of detecting lies and helping regular people free themselves from 
                     the lies of others, sadly, loved ones. He had reached out previosuly to a company to help him get out there to start helping people around Utah by creating a web site. 
                     The web site had served him well, but I knew that I could do much better than them and felt obligated to help him. Eager for any experience that I could get in web development 
                     I took to the task of building my Grandfather a new, trustworthy, aesthetic and modern web presence.
                 </p>
+                <iframe id="iframe1" src="https://www.nationaldme.net/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Project Polygraph"></iframe>
                 <h4 class="headprojects">Shalora flute page</h4>
                 <hr>
-                <p id="iframedesc1" class="paraprojects">Shalora Horne is the wife of my best friend. They recently had a baby and now she is a stay at home mother, but still needs to work. I ended up creating them a website to launch them out to the world. This website is a template that was heavily modified by me in order to satisfy their needs. I used a template because they needed rapid, mobile and tablet friendly development. I think it looks and operates like a charm.</br>
+                <p id="iframedesc2" class="paraprojects">Shalora Horne is the wife of my best friend. They recently had a baby and now she is a stay at home mother, but still needs to work. I ended up creating them a website to launch them out to the world. This website is a template that was heavily modified by me in order to satisfy their needs. I used a template because they needed rapid, mobile and tablet friendly development. I think it looks and operates like a charm.</br>
                 </p>
-                <iframe id="iframe1" src="https://shaloraflute.netlify.app/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Shalora flute page"></iframe>
+                <iframe id="iframe2" src="https://shaloraflute.netlify.app/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Shalora flute page"></iframe>
                 <h4 class="headprojects">My Portfolio</h4>
                 <hr>
-                <p id="iframedesc2" class="paraprojects">You're currently exploring my portfolio, one place where all of my relevant achievments can be stored for people to see! My portfolio was built using straight up HTML, CSS and JavaScript.
+                <p id="iframedesc3" class="paraprojects">You're currently exploring my portfolio, one place where all of my relevant achievments can be stored for people to see! My portfolio was built using straight up HTML, CSS and JavaScript.
                     No template or external wordpress was used. I made it like this partly so I could experiment with my capabilities, but also to display what I can do on my own. I am proud of it, but I can keep going.
                 </p>
+                <iframe id="iframe3" src="https://thomasandco.xyz/" style="width: 75vw; height: 85vh; border: none; margin: auto; border-radius: 10px;" title="Shalora flute page"></iframe> 
             </div>
             <script
         src="https://code.jquery.com/jquery-3.6.0.min.js"
