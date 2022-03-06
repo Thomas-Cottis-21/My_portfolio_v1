@@ -29,9 +29,22 @@ p {
     font-size: 30px;
     font-family: spartan;
     color: rgba(192, 197, 206);
+    word-wrap: break-word;
+}
+h2  {
+    width: 50vw;
+    color: #e25822;
+    font-size: 30px;
+    font-family: spartan;
 }
 .info {
-    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.method-of-contact-list {
+    display: flex;
+    flex-direction: row;
 }
 hr {
     border: solid;
@@ -61,4 +74,19 @@ hr {
     hr {
         margin: auto;
     }
+}
+@media (max-width: 500px){
+    h1 {
+        font-size: 80px;
+    }
+    h3 {
+        font-size: 40px;
+    }
+    p {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 25px;
+    }
+
 }

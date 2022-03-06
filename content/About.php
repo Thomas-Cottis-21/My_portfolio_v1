@@ -100,6 +100,7 @@ function newList($array){
                         <li>PHP</li>
                         <div class="line-prog" line-progressbar data-percentage="20" data-progress-color="#8b2d74"></div>
                     </ul>
+                    <p class="hard-skills-p">Some of my hobbies include: </p>
                     <?php 
 
                     echo "\n";

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Thanks!</title>
 </head>
-<body style="overflow: visible";>
+<body>
     <section class="flex">
         <div class="header">
             <h1 id="thanks" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Thank you for your interest!</h1>
@@ -19,13 +19,27 @@
             </div>
         </div>
         
+        <?php
+        function contactMe(){
+            $array = $_GET["contact"];
+            $addToArray = " + ";
+            return implode($array, $addToArray);
+        };
+        ?>
         
-        <div class="thanks-content" data-aos="fade-left" data-aos-duration="2500" data-aos-once="true">
-            <p class="info">You're name, number, email address have been recorded as: </p>
+        <div class="thanks-content" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
+            <h2 class="info">You're name, number, and email address have been recorded as: </h2>
             <hr id="line" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
             <p><?=$_GET["name"]; ?></p>
             <p><?=$_GET["email"]; ?></p>
             <p><?=$_GET["number"]; ?></p>
+            <div>
+                <h2 class="info" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Your prefered method(s) of contact have been recorded as: </h2>
+                <div class="method-of-contact-list" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
+                    <p><?=contactMe(); ?></p>
+                </div>
+            </div>
+            
         </div>
     </section>
 

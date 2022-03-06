@@ -42,40 +42,29 @@
                 <p>What's the best way to contact you?</p>
                 <div>
                     <label for="phone">Call</label>
-                    <input type="checkbox" id="contactphone" name="contact-phone" value="Phone">
+                    <input type="checkbox" id="contactphone" name="contact[]" value="Phone">
 
                     <label for="text">Text</label>
-                    <input type="checkbox" id="contactext" name="contact-text" value="Text">
+                    <input type="checkbox" id="contactext" name="contact[]" value="Text">
                     
                     <label for="email">Email</label>
-                    <input type="checkbox" id="contactemail" name="contact-email" value="Email">
+                    <input type="checkbox" id="contactemail" name="contact[]" value="Email">
 
                     <label for="any"> Any</label>
-                    <input type="checkbox" id="contactany" name="contact-any" value="Any">
+                    <input type="checkbox" id="contactany" name="contact[]" value="Any">
                 </div> 
                 
                 <button class="submit">Submit</button>
             
                 
             </form>
-            
+            <h3>Or contact me directly</h3>
             <h2>
                 Cellphone: <a class="link" href="tel:3853352336">(385)-335-2336</a></br>
                 Email: <a class="link" href=mailto:thomas@thomasandco.xyz>thomas@thomasandco.xyz</a><br/>
 
             </h2>
         </section>
-
-        <h1 data-aos="fade-up">Find out what my friends and family say about me!</h1>
-
-        <table data-aos="fade-up">
-            <thead>
-                
-            </thead>
-            <tbody id ="tbReferences">
-
-            </tbody>
-        </table>
         <script src="/Js/JavaScript_contact.js"></script>
         <script src="/Js/JavaScript_DarkMode.js"></script>
         <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
