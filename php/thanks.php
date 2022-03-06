@@ -60,7 +60,7 @@
         $to = $_GET["email"];
         $subject = "Thank you!";
 
-        $message = "I'm excited and ready to finally work with you!";
+        $message = "Thank you " . $_GET["name"] . ", for having interest in me and my persuits. I will get back to you within 24 hours! I hope you have a wonderful rest of your day!";
 
         $headers = "From: thomascottis@thomasandco.xyz";
 
