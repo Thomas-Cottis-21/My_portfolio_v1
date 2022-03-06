@@ -325,7 +325,7 @@ hr {
 
 @media screen and (max-width: 768px) {
     body {
-        background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
+        background-image: url("/Images/Picsart_21-12-26_15-15-05-597.png");
         background-size: contain;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -372,7 +372,7 @@ hr {
 
 @media screen and (max-width: 1100px) {
     body {
-        background-image: url("Images/Picsart_21-12-26_15-15-05-597.png");
+        background-image: url("/Images/Picsart_21-12-26_15-15-05-597.png");
         background-size: cover;
         background-attachment: fixed;
         background-repeat: no-repeat;
