@@ -59,7 +59,7 @@ hr {
 .switch-theme {
     background-color: rgb(41, 41, 41);
 }
-@media (max-width: 1200px){
+@media (max-width: 1100px){
     body {
         overflow: visible;
     }
