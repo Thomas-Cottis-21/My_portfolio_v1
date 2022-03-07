@@ -72,7 +72,7 @@ a.link:hover {
     text-decoration: underline;
 }
 
-button.submit {
+input[type=submit] {
     display: flex;
     align-items: center;
     justify-content: center;

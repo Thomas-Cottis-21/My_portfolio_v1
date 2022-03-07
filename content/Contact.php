@@ -54,7 +54,7 @@
                     <input type="checkbox" id="contactany" name="contact[]" value="Any">
                 </div> 
                 
-                <button class="submit">Submit</button>
+                    <input type="submit" value="Submit">
             
                 
             </form>
