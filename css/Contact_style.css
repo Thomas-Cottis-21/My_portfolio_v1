@@ -164,7 +164,7 @@ label {
     border: 2px solid;
     border-color:rgba(192, 197, 206, .6);
     width: 30vw;
-    height: 5vh;
+    height: 3vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -176,7 +176,7 @@ input[type=email]{
     border: 2px solid;
     border-color: rgba(192, 197, 206, .6);
     width: 30vw;
-    height: 5vh;
+    height: 3vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -188,7 +188,7 @@ input[type=email]{
     border: 2px solid;
     border-color:rgba(192, 197, 206, .6);
     width: 15vw;
-    height: 5vh;
+    height: 3vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -211,7 +211,7 @@ input[type=email]{
 }
 p {
     font-family: spartan;
-    font-size: 20px;
+    font-size: 25px;
     border: solid 2px;
     border-color: orange;
     border-left: transparent;
@@ -266,13 +266,6 @@ h3 {
     .heading_top {
         height: 20vh;
     }
-    table, th, td {
-        color: rgba(192, 197, 206);
-        
-    }
-    td {
-        padding: 10px;
-    }
     #name {
         width: 75vw;
     }
@@ -281,6 +274,9 @@ h3 {
     }
     input[type=email]{
         width: 75vw;
+    }
+    input[type=submit]{
+        padding: 0;
     }
     #comments {
         width: 95vw;
@@ -295,11 +291,12 @@ h3 {
         background-repeat: no-repeat;
 }
 
-    button.submit {
+    input[type=submit] {
         font-size: 30px;
         flex-direction: column;
         height: auto;
-        width: 20vw;
+        width: 50vw;
+        height: auto;
     }
 
     button {
@@ -324,20 +321,15 @@ h3 {
     button.contact::before {
         font-size: 20px;
     }
-    td {
-        padding: 10px;
-    }
 }
 
 @media screen and (min-width: 768px) {
-    button.submit {
+    input[type=submit] {
         font-size: 30px;
+        height: auto;
 }
     button {
         font-size: 30px;
-    }
-    td {
-        padding: 15px;
     }
 }
 
@@ -351,21 +343,18 @@ h3 {
     
 }
 @media screen and (min-width: 1024px) {
-    button.submit {
+    input[type=submit] {
         font-size: 30px;
+        height: auto;
 }
     button {
         font-size: 30px;
     }
 }
-
-@media screen and (min-width: 1253) {
-
-}
-
 @media screen and (min-width: 1440px) {
-    button.submit {
+    input[type=submit] {
         font-size: 40px;
+        height: auto;
 }
     button {
         font-size: 40px;
