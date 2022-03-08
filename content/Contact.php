@@ -23,7 +23,7 @@
     
             <h1> Let's make this happen</h1>
             
-            <form action="/php/thanks.php" method="get">
+            <form action="/php/thanks.php" method="post">
 
                 <label for="name">Name:</label>
                 <input type="text" name="name" id="name" placeholder="Johana Ramirez">
@@ -58,7 +58,8 @@
             
                 
             </form>
-            <h3>Or contact me directly</h3>
+
+            <h3>Or contact me directly...</h3>
             <h2>
                 Cellphone: <a class="link" href="tel:3853352336">(385)-335-2336</a></br>
                 Email: <a class="link" href=mailto:thomas@thomasandco.xyz>thomas@thomasandco.xyz</a><br/>

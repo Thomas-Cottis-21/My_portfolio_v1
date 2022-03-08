@@ -15,13 +15,13 @@
         <div class="header">
             <h1 id="thanks" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Thank you for your interest!</h1>
             <div class="h3">
-                <h3 id="firstH3" data-aos="fade-left" data-aos-duration="2500" data-aos-once>I'll get back to you within 24 hours!</h3>
+                <h3 id="firstH3" data-aos="fade-left" data-aos-duration="2500" data-aos-once>I'll POST back to you within 24 hours!</h3>
             </div>
         </div>
         
         <?php
         function contactMe(){
-            $array = $_GET["contact"];
+            $array = $_POST["contact"];
             $addToArray = " + ";
             return implode($array, $addToArray);
         };
@@ -30,9 +30,9 @@
         <div class="thanks-content" data-aos="fade-right" data-aos-duration="1500" data-aos-once="true">
             <h2 class="info">You're name, number, and email address have been recorded as: </h2>
             <hr id="line" data-aos="fade-left" data-aos-duration="3000" data-aos-once="true">
-            <p><?=$_GET["name"]; ?></p>
-            <p><?=$_GET["email"]; ?></p>
-            <p><?=$_GET["number"]; ?></p>
+            <p><?=$_POST["name"]; ?></p>
+            <p><?=$_POST["email"]; ?></p>
+            <p><?=$_POST["number"]; ?></p>
             <div>
                 <h2 class="info" data-aos="fade-left" data-aos-duration="2000" data-aos-once="true">Your prefered method(s) of contact have been recorded as: </h2>
                 <div class="method-of-contact-list" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true" data-aos-anchor-placement="bottom-bottom">
@@ -42,29 +42,27 @@
             
         </div>
     </section>
-
     <?php
         $to = "thomascottis@thomasandco.xyz";
         $subject ="New Client!";
 
-        $message = $_GET["name"] . "\n" . $_GET["number"] . "\n" . $_GET["email"] . "\n" . $_GET["comments"];
+        $message = $_POST["name"] . "\n" . $_POST["number"] . "\n" . $_POST["email"] . "\n" . $_POST["comments"];
 
         $message = wordwrap($message, 70);
 
         $headers = "From: thomascottis@thomasandco.xyz";
 
         mail($to, $subject, $message, $headers);
-    
 
-    
-        $to = $_GET["email"];
+        $to = $_POST["email"];
         $subject = "Thank you!";
 
-        $message = "Thank you " . $_GET["name"] . ", for having interest in me and my persuits. I will get back to you within 24 hours! I hope you have a wonderful rest of your day!";
+        $message = "Thank you " . $_POST["name"] . ", for having interest in me and my persuits. I will get back to you within 24 hours! I hope you have a wonderful rest of your day!";
 
-        $headers = "From: thomascottis@thomasandco.xyz";
+        $headers2 = "From: thomascottis@thomasandco.xyz";
 
         mail($to, $subject, $message, $headers);
+        
     ?>
     
     <script src="/Js/JavaScript_DarkMode.js"></script>

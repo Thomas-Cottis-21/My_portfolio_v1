@@ -143,6 +143,7 @@ h2 {
     color: #e25822;
     font-size: 30px;
     text-align: center;
+    word-wrap: none;
 }
 form {
     display: flex;
