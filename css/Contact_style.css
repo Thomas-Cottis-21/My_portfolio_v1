@@ -164,7 +164,7 @@ label {
     border: 2px solid;
     border-color:rgba(192, 197, 206, .6);
     width: 30vw;
-    height: 3vh;
+    height: 4vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -176,7 +176,7 @@ input[type=email]{
     border: 2px solid;
     border-color: rgba(192, 197, 206, .6);
     width: 30vw;
-    height: 3vh;
+    height: 4vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -188,7 +188,7 @@ input[type=email]{
     border: 2px solid;
     border-color:rgba(192, 197, 206, .6);
     width: 15vw;
-    height: 3vh;
+    height: 4vh;
     font-size: 20px;
     font-family: spartan;
     border-radius: 10px;
@@ -268,12 +268,15 @@ h3 {
     }
     #name {
         width: 75vw;
+        height: 5vh;
     }
     #number {
         width: 75vw;
+        height: 5vh;
     }
     input[type=email]{
         width: 75vw;
+        height: 5vh;
     }
     input[type=submit]{
         padding: 0;
