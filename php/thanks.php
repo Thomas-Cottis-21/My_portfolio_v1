@@ -15,7 +15,7 @@
         <div class="header">
             <h1 id="thanks" data-aos="fade-right" data-aos-duration="2000" data-aos-once="true">Thank you for your interest!</h1>
             <div class="h3">
-                <h3 id="firstH3" data-aos="fade-left" data-aos-duration="2500" data-aos-once>I'll POST back to you within 24 hours!</h3>
+                <h3 id="firstH3" data-aos="fade-left" data-aos-duration="2500" data-aos-once>I'll get back to you within 24 hours!</h3>
             </div>
         </div>
         
